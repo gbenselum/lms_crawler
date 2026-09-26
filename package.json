@@ -1,0 +1,25 @@
+{
+  "name": "lms-crawler",
+  "version": "1.0.0",
+  "description": "Cross-platform Learning Management System (Moodle, Canvas, etc.) crawler and screenshot automation for Antigravity, supporting Windows, macOS, and Linux.",
+  "main": "skills/lms-crawler/scripts/crawl_lms.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node skills/lms-crawler/scripts/crawl_lms.mjs",
+    "crawl": "node skills/lms-crawler/scripts/crawl_lms.mjs"
+  },
+  "keywords": [
+    "antigravity",
+    "skill",
+    "moodle",
+    "lms",
+    "crawler",
+    "screenshots",
+    "cdp",
+    "windows",
+    "edge",
+    "chrome"
+  ],
+  "author": "Gabriel Benselum",
+  "license": "MIT"
+}

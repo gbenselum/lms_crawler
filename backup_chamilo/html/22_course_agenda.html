@@ -1,0 +1,912 @@
+<!DOCTYPE html><html lang="es" data-lang="es" class="no-js h-100"><head><style type="text/css" data-primevue-style-id="layer-order">@layer app-styles,primevue</style>
+    <meta charset="utf-8">
+    <meta name="generator" content="Chamilo 2">
+    <link href="https://chamilo.org/chamilo-lms/" rel="help">
+    <link href="https://chamilo.org/the-association/" rel="author">
+    <link href="https://chamilo.org/the-association/" rel="copyright">
+    <link rel="apple-touch-icon" href="https://chamilo.educa.website/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/themes/chamilo/images/favicon.ico" type="image/x-icon">
+
+                            
+        
+    <title>                            InnovaEduca - My campus
+            </title>
+
+                                                
+            
+    <script>
+      window.CH_AI_DISCLOSURE_ENABLED = true;
+    </script>        <link rel="stylesheet" href="/build/legacy_free-jqgrid.407f2633.css" integrity="sha384-wbDuHhbG1dytkz1WsNPP5A3pnLREZL7SRuZwG/D2PxzJHr1/d1hCd1kF0kb0mzxC">
+        <link rel="stylesheet" href="/build/legacy_app.1ee2e7c1.css" integrity="sha384-PgHTq3VzZXGyIfFVPtNUjP75DPFICG5x70jEnGA8A7gdI/lQ9VxLlQjlatwdNUhw">
+        
+        
+        
+        <link rel="stylesheet" href="/build/vue.5d9f30eb.css" integrity="sha384-XglEGoTPC3MFIPrwvswUTXuDtghqL5JibdlTraQLYKQT6fhPFIb1LtkWYO+FwRJp">
+        <link rel="stylesheet" href="/build/app.9790bb5b.css" integrity="sha384-HmJOwPV/6b3xJQUwUZZ+c1P3RulvwnuU8xqmaEpnUWW821ayJAPmockjsPsV5JSR">
+
+        
+        <link rel="stylesheet" href="/themes/chamilo/colors.css">
+            
+        <script src="/themes/chamilo/tiny-settings.js"></script>
+
+    <script src="/build/runtime.046dcf05.js" integrity="sha384-E7F12j/9VxdMEae3ftqGXZESr2GdoqWbmdDq0hrOLUUt6O248LnrlXIXu/wzmnl9"></script><script src="/build/legacy_free-jqgrid.3b783ce8.js" integrity="sha384-kEyC/pHcogwPgbnvPKcDiK5AU9nvAbsKYyHWOhWsn5QWh/8aUX8J5vl+X0iedNIy"></script>
+    <script src="/build/legacy_app.57b5421b.js" integrity="sha384-8ER7ZcV7L2cCV/VXljUa+VFWINwKnOA5Kyc/5quGUFFAt1FLWimB59d2rGPxoxKb"></script><style>:root{--swal2-outline: 0 0 0 3px rgba(100, 150, 200, 0.5);--swal2-container-padding: 0.625em;--swal2-backdrop: rgba(0, 0, 0, 0.4);--swal2-backdrop-transition: background-color 0.15s;--swal2-width: 32em;--swal2-padding: 0 0 1.25em;--swal2-border: none;--swal2-border-radius: 0.3125rem;--swal2-background: white;--swal2-color: #545454;--swal2-show-animation: swal2-show 0.3s;--swal2-hide-animation: swal2-hide 0.15s forwards;--swal2-icon-zoom: 1;--swal2-icon-animations: true;--swal2-title-padding: 0.8em 1em 0;--swal2-html-container-padding: 1em 1.6em 0.3em;--swal2-input-border: 1px solid #d9d9d9;--swal2-input-border-radius: 0.1875em;--swal2-input-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px transparent;--swal2-input-background: transparent;--swal2-input-transition: border-color 0.2s, box-shadow 0.2s;--swal2-input-hover-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px transparent;--swal2-input-focus-border: 1px solid #b4dbed;--swal2-input-focus-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px rgba(100, 150, 200, 0.5);--swal2-progress-step-background: #add8e6;--swal2-validation-message-background: #f0f0f0;--swal2-validation-message-color: #666;--swal2-footer-border-color: #eee;--swal2-footer-background: transparent;--swal2-footer-color: inherit;--swal2-timer-progress-bar-background: rgba(0, 0, 0, 0.3);--swal2-close-button-position: initial;--swal2-close-button-inset: auto;--swal2-close-button-font-size: 2.5em;--swal2-close-button-color: #ccc;--swal2-close-button-transition: color 0.2s, box-shadow 0.2s;--swal2-close-button-outline: initial;--swal2-close-button-box-shadow: inset 0 0 0 3px transparent;--swal2-close-button-focus-box-shadow: inset var(--swal2-outline);--swal2-close-button-hover-transform: none;--swal2-actions-justify-content: center;--swal2-actions-width: auto;--swal2-actions-margin: 1.25em auto 0;--swal2-actions-padding: 0;--swal2-actions-border-radius: 0;--swal2-actions-background: transparent;--swal2-action-button-transition: background-color 0.2s, box-shadow 0.2s;--swal2-action-button-hover: black 10%;--swal2-action-button-active: black 10%;--swal2-confirm-button-box-shadow: none;--swal2-confirm-button-border-radius: 0.25em;--swal2-confirm-button-background-color: #7066e0;--swal2-confirm-button-color: #fff;--swal2-deny-button-box-shadow: none;--swal2-deny-button-border-radius: 0.25em;--swal2-deny-button-background-color: #dc3741;--swal2-deny-button-color: #fff;--swal2-cancel-button-box-shadow: none;--swal2-cancel-button-border-radius: 0.25em;--swal2-cancel-button-background-color: #6e7881;--swal2-cancel-button-color: #fff;--swal2-toast-show-animation: swal2-toast-show 0.5s;--swal2-toast-hide-animation: swal2-toast-hide 0.1s forwards;--swal2-toast-border: none;--swal2-toast-box-shadow: 0 0 1px hsl(0deg 0% 0% / 0.075), 0 1px 2px hsl(0deg 0% 0% / 0.075), 1px 2px 4px hsl(0deg 0% 0% / 0.075), 1px 3px 8px hsl(0deg 0% 0% / 0.075), 2px 4px 16px hsl(0deg 0% 0% / 0.075)}[data-swal2-theme=dark]{--swal2-dark-theme-black: #19191a;--swal2-dark-theme-white: #e1e1e1;--swal2-background: var(--swal2-dark-theme-black);--swal2-color: var(--swal2-dark-theme-white);--swal2-footer-border-color: #555;--swal2-input-background: color-mix(in srgb, var(--swal2-dark-theme-black), var(--swal2-dark-theme-white) 10%);--swal2-validation-message-background: color-mix( in srgb, var(--swal2-dark-theme-black), var(--swal2-dark-theme-white) 10% );--swal2-validation-message-color: var(--swal2-dark-theme-white);--swal2-timer-progress-bar-background: rgba(255, 255, 255, 0.7)}@media(prefers-color-scheme: dark){[data-swal2-theme=auto]{--swal2-dark-theme-black: #19191a;--swal2-dark-theme-white: #e1e1e1;--swal2-background: var(--swal2-dark-theme-black);--swal2-color: var(--swal2-dark-theme-white);--swal2-footer-border-color: #555;--swal2-input-background: color-mix(in srgb, var(--swal2-dark-theme-black), var(--swal2-dark-theme-white) 10%);--swal2-validation-message-background: color-mix( in srgb, var(--swal2-dark-theme-black), var(--swal2-dark-theme-white) 10% );--swal2-validation-message-color: var(--swal2-dark-theme-white);--swal2-timer-progress-bar-background: rgba(255, 255, 255, 0.7)}}body.swal2-shown:not(.swal2-no-backdrop,.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto !important}body.swal2-no-backdrop .swal2-container{background-color:rgba(0,0,0,0) !important;pointer-events:none}body.swal2-no-backdrop .swal2-container .swal2-popup{pointer-events:auto}body.swal2-no-backdrop .swal2-container .swal2-modal{box-shadow:0 0 10px var(--swal2-backdrop)}body.swal2-toast-shown .swal2-container{box-sizing:border-box;width:360px;max-width:100%;background-color:rgba(0,0,0,0);pointer-events:none}body.swal2-toast-shown .swal2-container.swal2-top{inset:0 auto auto 50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{inset:0 0 auto auto}body.swal2-toast-shown .swal2-container.swal2-top-start,body.swal2-toast-shown .swal2-container.swal2-top-left{inset:0 auto auto 0}body.swal2-toast-shown .swal2-container.swal2-center-start,body.swal2-toast-shown .swal2-container.swal2-center-left{inset:50% auto auto 0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{inset:50% auto auto 50%;transform:translate(-50%, -50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{inset:50% 0 auto auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-start,body.swal2-toast-shown .swal2-container.swal2-bottom-left{inset:auto auto 0 0}body.swal2-toast-shown .swal2-container.swal2-bottom{inset:auto auto 0 50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{inset:auto 0 0 auto}@media print{body.swal2-shown:not(.swal2-no-backdrop,.swal2-toast-shown){overflow-y:scroll !important}body.swal2-shown:not(.swal2-no-backdrop,.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop,.swal2-toast-shown) .swal2-container{position:static !important}}div:where(.swal2-container){display:grid;position:fixed;z-index:1060;inset:0;box-sizing:border-box;grid-template-areas:"top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";grid-template-rows:minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);height:100%;padding:var(--swal2-container-padding);overflow-x:hidden;transition:var(--swal2-backdrop-transition);-webkit-overflow-scrolling:touch}div:where(.swal2-container).swal2-backdrop-show,div:where(.swal2-container).swal2-noanimation{background:var(--swal2-backdrop)}div:where(.swal2-container).swal2-backdrop-hide{background:rgba(0,0,0,0) !important}div:where(.swal2-container).swal2-top-start,div:where(.swal2-container).swal2-center-start,div:where(.swal2-container).swal2-bottom-start{grid-template-columns:minmax(0, 1fr) auto auto}div:where(.swal2-container).swal2-top,div:where(.swal2-container).swal2-center,div:where(.swal2-container).swal2-bottom{grid-template-columns:auto minmax(0, 1fr) auto}div:where(.swal2-container).swal2-top-end,div:where(.swal2-container).swal2-center-end,div:where(.swal2-container).swal2-bottom-end{grid-template-columns:auto auto minmax(0, 1fr)}div:where(.swal2-container).swal2-top-start>.swal2-popup{align-self:start}div:where(.swal2-container).swal2-top>.swal2-popup{grid-column:2;place-self:start center}div:where(.swal2-container).swal2-top-end>.swal2-popup,div:where(.swal2-container).swal2-top-right>.swal2-popup{grid-column:3;place-self:start end}div:where(.swal2-container).swal2-center-start>.swal2-popup,div:where(.swal2-container).swal2-center-left>.swal2-popup{grid-row:2;align-self:center}div:where(.swal2-container).swal2-center>.swal2-popup{grid-column:2;grid-row:2;place-self:center center}div:where(.swal2-container).swal2-center-end>.swal2-popup,div:where(.swal2-container).swal2-center-right>.swal2-popup{grid-column:3;grid-row:2;place-self:center end}div:where(.swal2-container).swal2-bottom-start>.swal2-popup,div:where(.swal2-container).swal2-bottom-left>.swal2-popup{grid-column:1;grid-row:3;align-self:end}div:where(.swal2-container).swal2-bottom>.swal2-popup{grid-column:2;grid-row:3;place-self:end center}div:where(.swal2-container).swal2-bottom-end>.swal2-popup,div:where(.swal2-container).swal2-bottom-right>.swal2-popup{grid-column:3;grid-row:3;place-self:end end}div:where(.swal2-container).swal2-grow-row>.swal2-popup,div:where(.swal2-container).swal2-grow-fullscreen>.swal2-popup{grid-column:1/4;width:100%}div:where(.swal2-container).swal2-grow-column>.swal2-popup,div:where(.swal2-container).swal2-grow-fullscreen>.swal2-popup{grid-row:1/4;align-self:stretch}div:where(.swal2-container).swal2-no-transition{transition:none !important}div:where(.swal2-container)[popover]{width:auto;border:0}div:where(.swal2-container) div:where(.swal2-popup){display:none;position:relative;box-sizing:border-box;grid-template-columns:minmax(0, 100%);width:var(--swal2-width);max-width:100%;padding:var(--swal2-padding);border:var(--swal2-border);border-radius:var(--swal2-border-radius);background:var(--swal2-background);color:var(--swal2-color);font-family:inherit;font-size:1rem;container-name:swal2-popup}div:where(.swal2-container) div:where(.swal2-popup):focus{outline:none}div:where(.swal2-container) div:where(.swal2-popup).swal2-loading{overflow-y:hidden}div:where(.swal2-container) div:where(.swal2-popup).swal2-draggable{cursor:grab}div:where(.swal2-container) div:where(.swal2-popup).swal2-draggable div:where(.swal2-icon){cursor:grab}div:where(.swal2-container) div:where(.swal2-popup).swal2-dragging{cursor:grabbing}div:where(.swal2-container) div:where(.swal2-popup).swal2-dragging div:where(.swal2-icon){cursor:grabbing}div:where(.swal2-container) h2:where(.swal2-title){position:relative;max-width:100%;margin:0;padding:var(--swal2-title-padding);color:inherit;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;overflow-wrap:break-word;cursor:initial}div:where(.swal2-container) div:where(.swal2-actions){display:flex;z-index:1;box-sizing:border-box;flex-wrap:wrap;align-items:center;justify-content:var(--swal2-actions-justify-content);width:var(--swal2-actions-width);margin:var(--swal2-actions-margin);padding:var(--swal2-actions-padding);border-radius:var(--swal2-actions-border-radius);background:var(--swal2-actions-background)}div:where(.swal2-container) div:where(.swal2-loader){display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:#2778c4 rgba(0,0,0,0) #2778c4 rgba(0,0,0,0)}div:where(.swal2-container) button:where(.swal2-styled){margin:.3125em;padding:.625em 1.1em;transition:var(--swal2-action-button-transition);border:none;box-shadow:0 0 0 3px rgba(0,0,0,0);font-weight:500}div:where(.swal2-container) button:where(.swal2-styled):not([disabled]){cursor:pointer}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm){border-radius:var(--swal2-confirm-button-border-radius);background:initial;background-color:var(--swal2-confirm-button-background-color);box-shadow:var(--swal2-confirm-button-box-shadow);color:var(--swal2-confirm-button-color);font-size:1em}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm):hover{background-color:color-mix(in srgb, var(--swal2-confirm-button-background-color), var(--swal2-action-button-hover))}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm):active{background-color:color-mix(in srgb, var(--swal2-confirm-button-background-color), var(--swal2-action-button-active))}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-deny){border-radius:var(--swal2-deny-button-border-radius);background:initial;background-color:var(--swal2-deny-button-background-color);box-shadow:var(--swal2-deny-button-box-shadow);color:var(--swal2-deny-button-color);font-size:1em}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-deny):hover{background-color:color-mix(in srgb, var(--swal2-deny-button-background-color), var(--swal2-action-button-hover))}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-deny):active{background-color:color-mix(in srgb, var(--swal2-deny-button-background-color), var(--swal2-action-button-active))}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel){border-radius:var(--swal2-cancel-button-border-radius);background:initial;background-color:var(--swal2-cancel-button-background-color);box-shadow:var(--swal2-cancel-button-box-shadow);color:var(--swal2-cancel-button-color);font-size:1em}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel):hover{background-color:color-mix(in srgb, var(--swal2-cancel-button-background-color), var(--swal2-action-button-hover))}div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel):active{background-color:color-mix(in srgb, var(--swal2-cancel-button-background-color), var(--swal2-action-button-active))}div:where(.swal2-container) button:where(.swal2-styled):focus-visible{outline:none;box-shadow:var(--swal2-action-button-focus-box-shadow)}div:where(.swal2-container) button:where(.swal2-styled)[disabled]:not(.swal2-loading){opacity:.4}div:where(.swal2-container) button:where(.swal2-styled)::-moz-focus-inner{border:0}div:where(.swal2-container) div:where(.swal2-footer){margin:1em 0 0;padding:1em 1em 0;border-top:1px solid var(--swal2-footer-border-color);background:var(--swal2-footer-background);color:var(--swal2-footer-color);font-size:1em;text-align:center;cursor:initial}div:where(.swal2-container) .swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto !important;overflow:hidden;border-bottom-right-radius:var(--swal2-border-radius);border-bottom-left-radius:var(--swal2-border-radius)}div:where(.swal2-container) div:where(.swal2-timer-progress-bar){width:100%;height:.25em;background:var(--swal2-timer-progress-bar-background)}div:where(.swal2-container) img:where(.swal2-image){max-width:100%;margin:2em auto 1em;cursor:initial}div:where(.swal2-container) button:where(.swal2-close){position:var(--swal2-close-button-position);inset:var(--swal2-close-button-inset);z-index:2;align-items:center;justify-content:center;width:1.2em;height:1.2em;margin-top:0;margin-right:0;margin-bottom:-1.2em;padding:0;overflow:hidden;transition:var(--swal2-close-button-transition);border:none;border-radius:var(--swal2-border-radius);outline:var(--swal2-close-button-outline);background:rgba(0,0,0,0);color:var(--swal2-close-button-color);font-family:monospace;font-size:var(--swal2-close-button-font-size);cursor:pointer;justify-self:end}div:where(.swal2-container) button:where(.swal2-close):hover{transform:var(--swal2-close-button-hover-transform);background:rgba(0,0,0,0);color:#f27474}div:where(.swal2-container) button:where(.swal2-close):focus-visible{outline:none;box-shadow:var(--swal2-close-button-focus-box-shadow)}div:where(.swal2-container) button:where(.swal2-close)::-moz-focus-inner{border:0}div:where(.swal2-container) div:where(.swal2-html-container){z-index:1;justify-content:center;margin:0;padding:var(--swal2-html-container-padding);overflow:auto;color:inherit;font-size:1.125em;font-weight:normal;line-height:normal;text-align:center;overflow-wrap:break-word;word-break:break-word;cursor:initial}div:where(.swal2-container) input:where(.swal2-input),div:where(.swal2-container) input:where(.swal2-file),div:where(.swal2-container) textarea:where(.swal2-textarea),div:where(.swal2-container) select:where(.swal2-select),div:where(.swal2-container) div:where(.swal2-radio),div:where(.swal2-container) label:where(.swal2-checkbox){margin:1em 2em 3px}div:where(.swal2-container) input:where(.swal2-input),div:where(.swal2-container) input:where(.swal2-file),div:where(.swal2-container) textarea:where(.swal2-textarea){box-sizing:border-box;width:auto;transition:var(--swal2-input-transition);border:var(--swal2-input-border);border-radius:var(--swal2-input-border-radius);background:var(--swal2-input-background);box-shadow:var(--swal2-input-box-shadow);color:inherit;font-size:1.125em}div:where(.swal2-container) input:where(.swal2-input).swal2-inputerror,div:where(.swal2-container) input:where(.swal2-file).swal2-inputerror,div:where(.swal2-container) textarea:where(.swal2-textarea).swal2-inputerror{border-color:#f27474 !important;box-shadow:0 0 2px #f27474 !important}div:where(.swal2-container) input:where(.swal2-input):hover,div:where(.swal2-container) input:where(.swal2-file):hover,div:where(.swal2-container) textarea:where(.swal2-textarea):hover{box-shadow:var(--swal2-input-hover-box-shadow)}div:where(.swal2-container) input:where(.swal2-input):focus,div:where(.swal2-container) input:where(.swal2-file):focus,div:where(.swal2-container) textarea:where(.swal2-textarea):focus{border:var(--swal2-input-focus-border);outline:none;box-shadow:var(--swal2-input-focus-box-shadow)}div:where(.swal2-container) input:where(.swal2-input)::placeholder,div:where(.swal2-container) input:where(.swal2-file)::placeholder,div:where(.swal2-container) textarea:where(.swal2-textarea)::placeholder{color:#ccc}div:where(.swal2-container) .swal2-range{margin:1em 2em 3px;background:var(--swal2-background)}div:where(.swal2-container) .swal2-range input{width:80%}div:where(.swal2-container) .swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}div:where(.swal2-container) .swal2-range input,div:where(.swal2-container) .swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}div:where(.swal2-container) .swal2-input{height:2.625em;padding:0 .75em}div:where(.swal2-container) .swal2-file{width:75%;margin-right:auto;margin-left:auto;background:var(--swal2-input-background);font-size:1.125em}div:where(.swal2-container) .swal2-textarea{height:6.75em;padding:.75em}div:where(.swal2-container) .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:var(--swal2-input-background);color:inherit;font-size:1.125em}div:where(.swal2-container) .swal2-radio,div:where(.swal2-container) .swal2-checkbox{align-items:center;justify-content:center;background:var(--swal2-background);color:inherit}div:where(.swal2-container) .swal2-radio label,div:where(.swal2-container) .swal2-checkbox label{margin:0 .6em;font-size:1.125em}div:where(.swal2-container) .swal2-radio input,div:where(.swal2-container) .swal2-checkbox input{flex-shrink:0;margin:0 .4em}div:where(.swal2-container) label:where(.swal2-input-label){display:flex;justify-content:center;margin:1em auto 0}div:where(.swal2-container) div:where(.swal2-validation-message){align-items:center;justify-content:center;margin:1em 0 0;padding:.625em;overflow:hidden;background:var(--swal2-validation-message-background);color:var(--swal2-validation-message-color);font-size:1em;font-weight:300}div:where(.swal2-container) div:where(.swal2-validation-message)::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}div:where(.swal2-container) .swal2-progress-steps{flex-wrap:wrap;align-items:center;max-width:100%;margin:1.25em auto;padding:0;background:rgba(0,0,0,0);font-weight:600}div:where(.swal2-container) .swal2-progress-steps li{display:inline-block;position:relative}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:#2778c4;color:#fff;line-height:2em;text-align:center}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#2778c4}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:var(--swal2-progress-step-background);color:#fff}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:var(--swal2-progress-step-background)}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:#2778c4}div:where(.swal2-icon){position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:2.5em auto .6em;zoom:var(--swal2-icon-zoom);border:.25em solid rgba(0,0,0,0);border-radius:50%;border-color:#000;font-family:inherit;line-height:5em;cursor:default;user-select:none}div:where(.swal2-icon) .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}div:where(.swal2-icon).swal2-error{border-color:#f27474;color:#f27474}div:where(.swal2-icon).swal2-error .swal2-x-mark{position:relative;flex-grow:1}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}@container swal2-popup style(--swal2-icon-animations:true){div:where(.swal2-icon).swal2-error.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-error.swal2-icon-show .swal2-x-mark{animation:swal2-animate-error-x-mark .5s}}div:where(.swal2-icon).swal2-warning{border-color:#f8bb86;color:#f8bb86}@container swal2-popup style(--swal2-icon-animations:true){div:where(.swal2-icon).swal2-warning.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-warning.swal2-icon-show .swal2-icon-content{animation:swal2-animate-i-mark .5s}}div:where(.swal2-icon).swal2-info{border-color:#3fc3ee;color:#3fc3ee}@container swal2-popup style(--swal2-icon-animations:true){div:where(.swal2-icon).swal2-info.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-info.swal2-icon-show .swal2-icon-content{animation:swal2-animate-i-mark .8s}}div:where(.swal2-icon).swal2-question{border-color:#87adbd;color:#87adbd}@container swal2-popup style(--swal2-icon-animations:true){div:where(.swal2-icon).swal2-question.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-question.swal2-icon-show .swal2-icon-content{animation:swal2-animate-question-mark .8s}}div:where(.swal2-icon).swal2-success{border-color:#a5dc86;color:#a5dc86}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;border-radius:50%}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=left]{top:-0.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=right]{top:-0.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}div:where(.swal2-icon).swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-0.25em;left:-0.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}div:where(.swal2-icon).swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}div:where(.swal2-icon).swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}@container swal2-popup style(--swal2-icon-animations:true){div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-tip{animation:swal2-animate-success-line-tip .75s}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-long{animation:swal2-animate-success-line-long .75s}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right{animation:swal2-rotate-success-circular-line 4.25s ease-in}}[class^=swal2]{-webkit-tap-highlight-color:rgba(0,0,0,0)}.swal2-show{animation:var(--swal2-show-animation)}.swal2-hide{animation:var(--swal2-hide-animation)}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{margin-right:initial;margin-left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}.swal2-toast{box-sizing:border-box;grid-column:1/4 !important;grid-row:1/4 !important;grid-template-columns:min-content auto min-content;padding:1em;overflow-y:hidden;border:var(--swal2-toast-border);background:var(--swal2-background);box-shadow:var(--swal2-toast-box-shadow);pointer-events:auto}.swal2-toast>*{grid-column:2}.swal2-toast h2:where(.swal2-title){margin:.5em 1em;padding:0;font-size:1em;text-align:initial}.swal2-toast .swal2-loading{justify-content:center}.swal2-toast input:where(.swal2-input){height:2em;margin:.5em;font-size:1em}.swal2-toast .swal2-validation-message{font-size:1em}.swal2-toast div:where(.swal2-footer){margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-toast button:where(.swal2-close){grid-column:3/3;grid-row:1/99;align-self:center;width:.8em;height:.8em;margin:0;font-size:2em}.swal2-toast div:where(.swal2-html-container){margin:.5em 1em;padding:0;overflow:initial;font-size:1em;text-align:initial}.swal2-toast div:where(.swal2-html-container):empty{padding:0}.swal2-toast .swal2-loader{grid-column:1;grid-row:1/99;align-self:center;width:2em;height:2em;margin:.25em}.swal2-toast .swal2-icon{grid-column:1;grid-row:1/99;align-self:center;width:2em;min-width:2em;height:2em;margin:0 .5em 0 0}.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:bold}.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-toast div:where(.swal2-actions){justify-content:flex-start;height:auto;margin:0;margin-top:.5em;padding:0 .5em}.swal2-toast button:where(.swal2-styled){margin:.25em .5em;padding:.4em .6em;font-size:1em}.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;border-radius:50%}.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-0.8em;left:-0.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-0.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}@container swal2-popup style(--swal2-icon-animations:true){.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{animation:swal2-toast-animate-success-line-tip .75s}.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{animation:swal2-toast-animate-success-line-long .75s}}.swal2-toast.swal2-show{animation:var(--swal2-toast-show-animation)}.swal2-toast.swal2-hide{animation:var(--swal2-toast-hide-animation)}@keyframes swal2-show{0%{transform:translate3d(0, -50px, 0) scale(0.9);opacity:0}100%{transform:translate3d(0, 0, 0) scale(1);opacity:1}}@keyframes swal2-hide{0%{transform:translate3d(0, 0, 0) scale(1);opacity:1}100%{transform:translate3d(0, -50px, 0) scale(0.9);opacity:0}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-0.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(0.4);opacity:0}50%{margin-top:1.625em;transform:scale(0.4);opacity:0}80%{margin-top:-0.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0deg);opacity:1}}@keyframes swal2-rotate-loading{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes swal2-animate-question-mark{0%{transform:rotateY(-360deg)}100%{transform:rotateY(0)}}@keyframes swal2-animate-i-mark{0%{transform:rotateZ(45deg);opacity:0}25%{transform:rotateZ(-25deg);opacity:.4}50%{transform:rotateZ(15deg);opacity:.8}75%{transform:rotateZ(-5deg);opacity:1}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-toast-show{0%{transform:translateY(-0.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(0.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0deg)}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-0.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}</style>
+    <script src="/build/legacy_lp.e8d7a0d1.js" integrity="sha384-Y8X8Ril+BDaIy0jxRqw2B/YLsSce7GV6Inu9XZhcgizTdI8haAKGW90MKB1PM3cf"></script>
+    <script src="/build/legacy_exercise.05c2ee25.js" integrity="sha384-P3VAWhCAwskpfGUN7G34TY6ey5HyJtRm8/Mje+oz6fVb2a9OyF23k0ekkTukqGQz"></script>
+    <script src="/build/legacy_document.a3eb93a9.js" integrity="sha384-/GfMzC/HmnpEwTAwP2J7Sq8H9aCJ8/Rx3+26mVwe394FlSnn4Wof2KAbSpfTHkWT"></script>
+
+            
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        
+        
+                                                        <link href="https://chamilo.educa.website/build/libs/fullcalendar/main.css" rel="stylesheet" media="screen" type="text/css">
+
+                <script src="https://chamilo.educa.website/build/libs/fullcalendar/main.js"></script>
+
+                                        
+    <link rel="manifest" href="/manifest.json">
+
+        <style type="text/css" data-primevue-style-id="global-style">@layer primevue{ *,::before,::after{box-sizing:border-box;}.p-collapsible-enter-active{animation:p-animate-collapsible-expand 0.2s ease-out;overflow:hidden;}.p-collapsible-leave-active{animation:p-animate-collapsible-collapse 0.2s ease-out;overflow:hidden;}@keyframes p-animate-collapsible-expand{from{grid-template-rows:0fr;}to{grid-template-rows:1fr;}} @keyframes p-animate-collapsible-collapse{from{grid-template-rows:1fr;}to{grid-template-rows:0fr;}} .p-disabled,.p-disabled *{cursor:default;pointer-events:none;user-select:none;}.p-disabled,.p-component:disabled{opacity:var(--p-disabled-opacity);}.pi{font-size:var(--p-icon-size);}.p-icon{width:var(--p-icon-size);height:var(--p-icon-size);}.p-overlay-mask{background:var(--px-mask-background,var(--p-mask-background));color:var(--p-mask-color);position:fixed;top:0;left:0;width:100%;height:100%;}.p-overlay-mask-enter-active{animation:p-animate-overlay-mask-enter var(--p-mask-transition-duration) forwards;}.p-overlay-mask-leave-active{animation:p-animate-overlay-mask-leave var(--p-mask-transition-duration) forwards;}@keyframes p-animate-overlay-mask-enter{from{background:transparent;}to{background:var(--px-mask-background,var(--p-mask-background));}} @keyframes p-animate-overlay-mask-leave{from{background:var(--px-mask-background,var(--p-mask-background));}to{background:transparent;}} .p-anchored-overlay-enter-active{animation:p-animate-anchored-overlay-enter 300ms cubic-bezier(.19,1,.22,1);}.p-anchored-overlay-leave-active{animation:p-animate-anchored-overlay-leave 300ms cubic-bezier(.19,1,.22,1);}@keyframes p-animate-anchored-overlay-enter{from{opacity:0;transform:scale(0.93);}} @keyframes p-animate-anchored-overlay-leave{to{opacity:0;transform:scale(0.93);}}}</style><style type="text/css" data-primevue-style-id="base">.p-hidden-accessible{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;opacity:0;overflow:hidden;padding:0;pointer-events:none;position:absolute;white-space:nowrap;width:1px;}.p-overflow-hidden{overflow:hidden;padding-right:var(--p-scrollbar-width);}</style><style type="text/css" data-primevue-style-id="toast-style">@layer primevue{ .p-toast{width:var(--p-toast-width);white-space:pre-line;word-break:break-word;}.p-toast-message{margin:0 0 1rem 0;display:grid;grid-template-rows:1fr;}.p-toast-message-icon{flex-shrink:0;font-size:var(--p-toast-icon-size);width:var(--p-toast-icon-size);height:var(--p-toast-icon-size);}.p-toast-message-content{display:flex;align-items:flex-start;padding:var(--p-toast-content-padding);gap:var(--p-toast-content-gap);min-height:0;overflow:hidden;transition:padding 250ms ease-in;}.p-toast-message-text{flex:1 1 auto;display:flex;flex-direction:column;gap:var(--p-toast-text-gap);}.p-toast-summary{font-weight:var(--p-toast-summary-font-weight);font-size:var(--p-toast-summary-font-size);}.p-toast-detail{font-weight:var(--p-toast-detail-font-weight);font-size:var(--p-toast-detail-font-size);}.p-toast-close-button{display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:pointer;background:transparent;transition:background var(--p-toast-transition-duration),color var(--p-toast-transition-duration),outline-color var(--p-toast-transition-duration),box-shadow var(--p-toast-transition-duration);outline-color:transparent;color:inherit;width:var(--p-toast-close-button-width);height:var(--p-toast-close-button-height);border-radius:var(--p-toast-close-button-border-radius);margin:-25% 0 0 0;right:-25%;padding:0;border:none;user-select:none;}.p-toast-close-button:dir(rtl){margin:-25% 0 0 auto;left:-25%;right:auto;}.p-toast-message-info,.p-toast-message-success,.p-toast-message-warn,.p-toast-message-error,.p-toast-message-secondary,.p-toast-message-contrast{border-width:var(--p-toast-border-width);border-style:solid;backdrop-filter:blur(var(--p-toast-blur));border-radius:var(--p-toast-border-radius);}.p-toast-close-icon{font-size:var(--p-toast-close-icon-size);width:var(--p-toast-close-icon-size);height:var(--p-toast-close-icon-size);}.p-toast-close-button:focus-visible{outline-width:var(--p-focus-ring-width);outline-style:var(--p-focus-ring-style);outline-offset:var(--p-focus-ring-offset);}.p-toast-message-info{background:var(--p-toast-info-background);border-color:var(--p-toast-info-border-color);color:var(--p-toast-info-color);box-shadow:var(--p-toast-info-shadow);}.p-toast-message-info .p-toast-detail{color:var(--p-toast-info-detail-color);}.p-toast-message-info .p-toast-close-button:focus-visible{outline-color:var(--p-toast-info-close-button-focus-ring-color);box-shadow:var(--p-toast-info-close-button-focus-ring-shadow);}.p-toast-message-info .p-toast-close-button:hover{background:var(--p-toast-info-close-button-hover-background);}.p-toast-message-success{background:var(--p-toast-success-background);border-color:var(--p-toast-success-border-color);color:var(--p-toast-success-color);box-shadow:var(--p-toast-success-shadow);}.p-toast-message-success .p-toast-detail{color:var(--p-toast-success-detail-color);}.p-toast-message-success .p-toast-close-button:focus-visible{outline-color:var(--p-toast-success-close-button-focus-ring-color);box-shadow:var(--p-toast-success-close-button-focus-ring-shadow);}.p-toast-message-success .p-toast-close-button:hover{background:var(--p-toast-success-close-button-hover-background);}.p-toast-message-warn{background:var(--p-toast-warn-background);border-color:var(--p-toast-warn-border-color);color:var(--p-toast-warn-color);box-shadow:var(--p-toast-warn-shadow);}.p-toast-message-warn .p-toast-detail{color:var(--p-toast-warn-detail-color);}.p-toast-message-warn .p-toast-close-button:focus-visible{outline-color:var(--p-toast-warn-close-button-focus-ring-color);box-shadow:var(--p-toast-warn-close-button-focus-ring-shadow);}.p-toast-message-warn .p-toast-close-button:hover{background:var(--p-toast-warn-close-button-hover-background);}.p-toast-message-error{background:var(--p-toast-error-background);border-color:var(--p-toast-error-border-color);color:var(--p-toast-error-color);box-shadow:var(--p-toast-error-shadow);}.p-toast-message-error .p-toast-detail{color:var(--p-toast-error-detail-color);}.p-toast-message-error .p-toast-close-button:focus-visible{outline-color:var(--p-toast-error-close-button-focus-ring-color);box-shadow:var(--p-toast-error-close-button-focus-ring-shadow);}.p-toast-message-error .p-toast-close-button:hover{background:var(--p-toast-error-close-button-hover-background);}.p-toast-message-secondary{background:var(--p-toast-secondary-background);border-color:var(--p-toast-secondary-border-color);color:var(--p-toast-secondary-color);box-shadow:var(--p-toast-secondary-shadow);}.p-toast-message-secondary .p-toast-detail{color:var(--p-toast-secondary-detail-color);}.p-toast-message-secondary .p-toast-close-button:focus-visible{outline-color:var(--p-toast-secondary-close-button-focus-ring-color);box-shadow:var(--p-toast-secondary-close-button-focus-ring-shadow);}.p-toast-message-secondary .p-toast-close-button:hover{background:var(--p-toast-secondary-close-button-hover-background);}.p-toast-message-contrast{background:var(--p-toast-contrast-background);border-color:var(--p-toast-contrast-border-color);color:var(--p-toast-contrast-color);box-shadow:var(--p-toast-contrast-shadow);}.p-toast-message-contrast .p-toast-detail{color:var(--p-toast-contrast-detail-color);}.p-toast-message-contrast .p-toast-close-button:focus-visible{outline-color:var(--p-toast-contrast-close-button-focus-ring-color);box-shadow:var(--p-toast-contrast-close-button-focus-ring-shadow);}.p-toast-message-contrast .p-toast-close-button:hover{background:var(--p-toast-contrast-close-button-hover-background);}.p-toast-top-center{transform:translateX(-50%);}.p-toast-bottom-center{transform:translateX(-50%);}.p-toast-center{min-width:20vw;transform:translate(-50%,-50%);}.p-toast-message-enter-active{animation:p-animate-toast-enter 300ms ease-out;}.p-toast-message-leave-active{animation:p-animate-toast-leave 250ms ease-in;}.p-toast-message-leave-to .p-toast-message-content{padding-top:0;padding-bottom:0;}@keyframes p-animate-toast-enter{from{opacity:0;transform:scale(0.6);}to{opacity:1;grid-template-rows:1fr;}} @keyframes p-animate-toast-leave{from{opacity:1;}to{opacity:0;margin-bottom:0;grid-template-rows:0fr;transform:translateY(-100%) scale(0.6);}}}</style><style type="text/css" data-primevue-style-id="togglebutton-style">@layer primevue{ .p-togglebutton{display:inline-flex;cursor:pointer;user-select:none;overflow:hidden;position:relative;color:var(--p-togglebutton-color);background:var(--p-togglebutton-background);border:1px solid var(--p-togglebutton-border-color);padding:var(--p-togglebutton-padding);font-size:1rem;font-family:inherit;font-feature-settings:inherit;transition:background var(--p-togglebutton-transition-duration),color var(--p-togglebutton-transition-duration),border-color var(--p-togglebutton-transition-duration),outline-color var(--p-togglebutton-transition-duration),box-shadow var(--p-togglebutton-transition-duration);border-radius:var(--p-togglebutton-border-radius);outline-color:transparent;font-weight:var(--p-togglebutton-font-weight);}.p-togglebutton-content{display:inline-flex;flex:1 1 auto;align-items:center;justify-content:center;gap:var(--p-togglebutton-gap);padding:var(--p-togglebutton-content-padding);background:transparent;border-radius:var(--p-togglebutton-content-border-radius);transition:background var(--p-togglebutton-transition-duration),color var(--p-togglebutton-transition-duration),border-color var(--p-togglebutton-transition-duration),outline-color var(--p-togglebutton-transition-duration),box-shadow var(--p-togglebutton-transition-duration);}.p-togglebutton:not(:disabled):not(.p-togglebutton-checked):hover{background:var(--p-togglebutton-hover-background);color:var(--p-togglebutton-hover-color);}.p-togglebutton.p-togglebutton-checked{background:var(--p-togglebutton-checked-background);border-color:var(--p-togglebutton-checked-border-color);color:var(--p-togglebutton-checked-color);}.p-togglebutton-checked .p-togglebutton-content{background:var(--p-togglebutton-content-checked-background);box-shadow:var(--p-togglebutton-content-checked-shadow);}.p-togglebutton:focus-visible{box-shadow:var(--p-togglebutton-focus-ring-shadow);outline:var(--p-togglebutton-focus-ring-width) var(--p-togglebutton-focus-ring-style) var(--p-togglebutton-focus-ring-color);outline-offset:var(--p-togglebutton-focus-ring-offset);}.p-togglebutton.p-invalid{border-color:var(--p-togglebutton-invalid-border-color);}.p-togglebutton:disabled{opacity:1;cursor:default;background:var(--p-togglebutton-disabled-background);border-color:var(--p-togglebutton-disabled-border-color);color:var(--p-togglebutton-disabled-color);}.p-togglebutton-label,.p-togglebutton-icon{position:relative;transition:none;}.p-togglebutton-icon{color:var(--p-togglebutton-icon-color);}.p-togglebutton:not(:disabled):not(.p-togglebutton-checked):hover .p-togglebutton-icon{color:var(--p-togglebutton-icon-hover-color);}.p-togglebutton.p-togglebutton-checked .p-togglebutton-icon{color:var(--p-togglebutton-icon-checked-color);}.p-togglebutton:disabled .p-togglebutton-icon{color:var(--p-togglebutton-icon-disabled-color);}.p-togglebutton-sm{padding:var(--p-togglebutton-sm-padding);font-size:var(--p-togglebutton-sm-font-size);}.p-togglebutton-sm .p-togglebutton-content{padding:var(--p-togglebutton-content-sm-padding);}.p-togglebutton-lg{padding:var(--p-togglebutton-lg-padding);font-size:var(--p-togglebutton-lg-font-size);}.p-togglebutton-lg .p-togglebutton-content{padding:var(--p-togglebutton-content-lg-padding);}.p-togglebutton-fluid{width:100%;}}</style><style type="text/css" data-primevue-style-id="ripple-directive-style">@layer primevue{ .p-ink{display:block;position:absolute;background:var(--p-ripple-background);border-radius:100%;transform:scale(0);pointer-events:none;}.p-ink-active{animation:ripple 0.4s linear;}@keyframes ripple{100%{opacity:0;transform:scale(2.5);}}}</style><style type="text/css" data-primevue-style-id="menu-style">@layer primevue{ .p-menu{background:var(--p-menu-background);color:var(--p-menu-color);border:1px solid var(--p-menu-border-color);border-radius:var(--p-menu-border-radius);min-width:12.5rem;}.p-menu-list{margin:0;padding:var(--p-menu-list-padding);outline:0 none;list-style:none;display:flex;flex-direction:column;gap:var(--p-menu-list-gap);}.p-menu-item-content{transition:background var(--p-menu-transition-duration),color var(--p-menu-transition-duration);border-radius:var(--p-menu-item-border-radius);color:var(--p-menu-item-color);overflow:hidden;}.p-menu-item-link{cursor:pointer;display:flex;align-items:center;text-decoration:none;overflow:hidden;position:relative;color:inherit;padding:var(--p-menu-item-padding);gap:var(--p-menu-item-gap);user-select:none;outline:0 none;}.p-menu-item-label{line-height:1;}.p-menu-item-icon{color:var(--p-menu-item-icon-color);}.p-menu-item.p-focus .p-menu-item-content{color:var(--p-menu-item-focus-color);background:var(--p-menu-item-focus-background);}.p-menu-item.p-focus .p-menu-item-icon{color:var(--p-menu-item-icon-focus-color);}.p-menu-item:not(.p-disabled) .p-menu-item-content:hover{color:var(--p-menu-item-focus-color);background:var(--p-menu-item-focus-background);}.p-menu-item:not(.p-disabled) .p-menu-item-content:hover .p-menu-item-icon{color:var(--p-menu-item-icon-focus-color);}.p-menu-overlay{box-shadow:var(--p-menu-shadow);}.p-menu-submenu-label{background:var(--p-menu-submenu-label-background);padding:var(--p-menu-submenu-label-padding);color:var(--p-menu-submenu-label-color);font-weight:var(--p-menu-submenu-label-font-weight);}.p-menu-separator{border-block-start:1px solid var(--p-menu-separator-border-color);}}</style><style type="text/css" data-primevue-style-id="panelmenu-style">@layer primevue{ .p-panelmenu{display:flex;flex-direction:column;gap:var(--p-panelmenu-gap);}.p-panelmenu-panel{background:var(--p-panelmenu-panel-background);border-width:var(--p-panelmenu-panel-border-width);border-style:solid;border-color:var(--p-panelmenu-panel-border-color);color:var(--p-panelmenu-panel-color);border-radius:var(--p-panelmenu-panel-border-radius);padding:var(--p-panelmenu-panel-padding);}.p-panelmenu-panel:first-child{border-width:var(--p-panelmenu-panel-first-border-width);border-start-start-radius:var(--p-panelmenu-panel-first-top-border-radius);border-start-end-radius:var(--p-panelmenu-panel-first-top-border-radius);}.p-panelmenu-panel:last-child{border-width:var(--p-panelmenu-panel-last-border-width);border-end-start-radius:var(--p-panelmenu-panel-last-bottom-border-radius);border-end-end-radius:var(--p-panelmenu-panel-last-bottom-border-radius);}.p-panelmenu-header{outline:0 none;}.p-panelmenu-header-content{border-radius:var(--p-panelmenu-item-border-radius);transition:background var(--p-panelmenu-transition-duration),color var(--p-panelmenu-transition-duration),outline-color var(--p-panelmenu-transition-duration),box-shadow var(--p-panelmenu-transition-duration);outline-color:transparent;color:var(--p-panelmenu-item-color);}.p-panelmenu-header-link{display:flex;gap:var(--p-panelmenu-item-gap);padding:var(--p-panelmenu-item-padding);align-items:center;user-select:none;cursor:pointer;position:relative;text-decoration:none;color:inherit;}.p-panelmenu-header-icon,.p-panelmenu-item-icon{color:var(--p-panelmenu-item-icon-color);}.p-panelmenu-submenu-icon{color:var(--p-panelmenu-submenu-icon-color);}.p-panelmenu-submenu-icon:dir(rtl){transform:rotate(180deg);}.p-panelmenu-header:not(.p-disabled):focus-visible .p-panelmenu-header-content{background:var(--p-panelmenu-item-focus-background);color:var(--p-panelmenu-item-focus-color);}.p-panelmenu-header:not(.p-disabled):focus-visible .p-panelmenu-header-content .p-panelmenu-header-icon{color:var(--p-panelmenu-item-icon-focus-color);}.p-panelmenu-header:not(.p-disabled):focus-visible .p-panelmenu-header-content .p-panelmenu-submenu-icon{color:var(--p-panelmenu-submenu-icon-focus-color);}.p-panelmenu-header:not(.p-disabled) .p-panelmenu-header-content:hover{background:var(--p-panelmenu-item-focus-background);color:var(--p-panelmenu-item-focus-color);}.p-panelmenu-header:not(.p-disabled) .p-panelmenu-header-content:hover .p-panelmenu-header-icon{color:var(--p-panelmenu-item-icon-focus-color);}.p-panelmenu-header:not(.p-disabled) .p-panelmenu-header-content:hover .p-panelmenu-submenu-icon{color:var(--p-panelmenu-submenu-icon-focus-color);}.p-panelmenu-submenu{margin:0;padding:0 0 0 var(--p-panelmenu-submenu-indent);outline:0;list-style:none;}.p-panelmenu-submenu:dir(rtl){padding:0 var(--p-panelmenu-submenu-indent) 0 0;}.p-panelmenu-item-link{display:flex;gap:var(--p-panelmenu-item-gap);padding:var(--p-panelmenu-item-padding);align-items:center;user-select:none;cursor:pointer;text-decoration:none;color:inherit;position:relative;overflow:hidden;}.p-panelmenu-item-label{line-height:1;}.p-panelmenu-item-content{border-radius:var(--p-panelmenu-item-border-radius);transition:background var(--p-panelmenu-transition-duration),color var(--p-panelmenu-transition-duration),outline-color var(--p-panelmenu-transition-duration),box-shadow var(--p-panelmenu-transition-duration);color:var(--p-panelmenu-item-color);outline-color:transparent;}.p-panelmenu-item.p-focus > .p-panelmenu-item-content{background:var(--p-panelmenu-item-focus-background);color:var(--p-panelmenu-item-focus-color);}.p-panelmenu-item.p-focus > .p-panelmenu-item-content .p-panelmenu-item-icon{color:var(--p-panelmenu-item-focus-color);}.p-panelmenu-item.p-focus > .p-panelmenu-item-content .p-panelmenu-submenu-icon{color:var(--p-panelmenu-submenu-icon-focus-color);}.p-panelmenu-item:not(.p-disabled) > .p-panelmenu-item-content:hover{background:var(--p-panelmenu-item-focus-background);color:var(--p-panelmenu-item-focus-color);}.p-panelmenu-item:not(.p-disabled) > .p-panelmenu-item-content:hover .p-panelmenu-item-icon{color:var(--p-panelmenu-item-icon-focus-color);}.p-panelmenu-item:not(.p-disabled) > .p-panelmenu-item-content:hover .p-panelmenu-submenu-icon{color:var(--p-panelmenu-submenu-icon-focus-color);}.p-panelmenu-content-container{display:grid;grid-template-rows:1fr;}.p-panelmenu-content-wrapper{min-height:0;}}</style><style type="text/css" data-primevue-style-id="dialog-style">@layer primevue{ .p-dialog{max-height:90%;transform:scale(1);border-radius:var(--p-dialog-border-radius);box-shadow:var(--p-dialog-shadow);background:var(--p-dialog-background);border:1px solid var(--p-dialog-border-color);color:var(--p-dialog-color);will-change:transform;}.p-dialog-content{overflow-y:auto;padding:var(--p-dialog-content-padding);}.p-dialog-header{display:flex;align-items:center;justify-content:space-between;flex-shrink:0;padding:var(--p-dialog-header-padding);}.p-dialog-title{font-weight:var(--p-dialog-title-font-weight);font-size:var(--p-dialog-title-font-size);}.p-dialog-footer{flex-shrink:0;padding:var(--p-dialog-footer-padding);display:flex;justify-content:flex-end;gap:var(--p-dialog-footer-gap);}.p-dialog-header-actions{display:flex;align-items:center;gap:var(--p-dialog-header-gap);}.p-dialog-top .p-dialog,.p-dialog-bottom .p-dialog,.p-dialog-left .p-dialog,.p-dialog-right .p-dialog,.p-dialog-topleft .p-dialog,.p-dialog-topright .p-dialog,.p-dialog-bottomleft .p-dialog,.p-dialog-bottomright .p-dialog{margin:1rem;}.p-dialog-maximized{width:100vw!important;height:100vh!important;top:0px!important;left:0px!important;max-height:100%;height:100%;border-radius:0;}.p-dialog-maximized .p-dialog-content{flex-grow:1;}.p-dialog .p-resizable-handle{position:absolute;font-size:0.1px;display:block;cursor:se-resize;width:12px;height:12px;right:1px;bottom:1px;}.p-dialog-enter-active{animation:p-animate-dialog-enter 300ms cubic-bezier(.19,1,.22,1);}.p-dialog-leave-active{animation:p-animate-dialog-leave 300ms cubic-bezier(.19,1,.22,1);}@keyframes p-animate-dialog-enter{from{opacity:0;transform:scale(0.93);}} @keyframes p-animate-dialog-leave{to{opacity:0;transform:scale(0.93);}}}</style><style type="text/css" data-primevue-style-id="confirmdialog-style">@layer primevue{ .p-confirmdialog .p-dialog-content{display:flex;align-items:center;gap:var(--p-confirmdialog-content-gap);}.p-confirmdialog-icon{color:var(--p-confirmdialog-icon-color);font-size:var(--p-confirmdialog-icon-size);width:var(--p-confirmdialog-icon-size);height:var(--p-confirmdialog-icon-size);}}</style><style type="text/css" data-primevue-style-id="breadcrumb-style">@layer primevue{ .p-breadcrumb{background:var(--p-breadcrumb-background);padding:var(--p-breadcrumb-padding);overflow-x:auto;}.p-breadcrumb-list{margin:0;padding:0;list-style-type:none;display:flex;align-items:center;flex-wrap:nowrap;gap:var(--p-breadcrumb-gap);}.p-breadcrumb-separator{display:flex;align-items:center;color:var(--p-breadcrumb-separator-color);}.p-breadcrumb-separator-icon:dir(rtl){transform:rotate(180deg);}.p-breadcrumb::-webkit-scrollbar{display:none;}.p-breadcrumb-item-link{text-decoration:none;display:flex;align-items:center;gap:var(--p-breadcrumb-item-gap);transition:background var(--p-breadcrumb-transition-duration),color var(--p-breadcrumb-transition-duration),outline-color var(--p-breadcrumb-transition-duration),box-shadow var(--p-breadcrumb-transition-duration);border-radius:var(--p-breadcrumb-item-border-radius);outline-color:transparent;color:var(--p-breadcrumb-item-color);}.p-breadcrumb-item-link:focus-visible{box-shadow:var(--p-breadcrumb-item-focus-ring-shadow);outline:var(--p-breadcrumb-item-focus-ring-width) var(--p-breadcrumb-item-focus-ring-style) var(--p-breadcrumb-item-focus-ring-color);outline-offset:var(--p-breadcrumb-item-focus-ring-offset);}.p-breadcrumb-item-link:hover .p-breadcrumb-item-label{color:var(--p-breadcrumb-item-hover-color);}.p-breadcrumb-item-label{transition:inherit;}.p-breadcrumb-item-icon{color:var(--p-breadcrumb-item-icon-color);transition:inherit;}.p-breadcrumb-item-link:hover .p-breadcrumb-item-icon{color:var(--p-breadcrumb-item-icon-hover-color);}}</style></head>
+<body class="font-sans antialiased page-main" data-in-course="true" data-course-id="1" data-session-id=""><a href="https://chamilo.educa.website/cdn-cgi/content?id=Ab7kdIOvCIHfO.rb7O4L.kpqSWIQnREl7RzlEMDQb4Y-1790387494.5439966-1.2.1.1-VIzrtHWsj4grmxisoxNRYYpCrX8hoBkEQMgnAkj.SZoR1eTwYmy5hHS1dkAJgeI8" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+<noscript>Su navegador no soporta el JavaScript</noscript><div class="page-main" aria-hidden="true"></div>            
+                
+        
+                    <script>
+window.user = {"@context":"\/api\/contexts\/User","@id":"\/api\/users\/8","@type":"http:\/\/schema.org\/Person","resourceNode":{"@id":"\/api\/resource_nodes\/82","@type":"ResourceNode","id":82},"illustrationUrl":"\/img\/user_default.svg","id":8,"username":"PauGonzalez","firstname":"Paula","lastname":"Gonzalez","locale":"en_US","timezone":"America\/Argentina\/Buenos_Aires","email":"natysala4tt@gmail.com","roles":["ROLE_STUDENT","ROLE_CURRENT_COURSE_STUDENT","ROLE_USER"],"active":1,"fullName":"Gonzalez, Paula"};
+window.is_login_url = 0;
+window.access_url_id = 1;
+window.languages = [{"id":49,"originalName":"Espa\u00f1ol","englishName":"spanish","isocode":"es","available":true}];
+window.breadcrumb = [{"name":"Ense\u00f1ar en la era Digital: Propuestas con recursos digitales para el aula","url":"\/course\/1\/home"},{"url":"#","name":"Agenda"}];
+</script>
+
+<div id="app" data-flashes="" data-v-app=""><div class="app-topbar"><div class="app-topbar__start"><div class="platform-logo"><a href="/home" class=""><img alt="My campus" src="/themes/chamilo/logo/header?t=1790387495665" title="My campus" decoding="async" fetchpriority="high"></a></div></div><div class="app-topbar__items"><!--v-if--><!--v-if--><!--v-if--><a href="/resources/messages" class="item-button--unread item-button" title="Bandeja de entrada"><span class="base-icon base-icon--normal item-button__icon"><i class="mdi mdi-inbox" aria-hidden="true"></i><!-- Optional badge: supports text or a chamilo icon --><!--v-if--><!-- Optional tooltip shown below on hover --><!--v-if--></span><span class="item-button__badge">9+</span></a></div><div class="app-topbar__end"><div class="user-avatar" data-pc-name="avatar" pc1="" data-pc-section="root" data-p="circle normal"><img src="/img/user_default.svg" data-pc-section="image" data-p="circle normal"></div><a class="app-sidebar__topbar-button item-button" tabindex="0"><i class="mdi mdi-close"></i></a></div></div><aside class="app-sidebar"><div class="app-sidebar__container"><h3 class="app-sidebar__top">Menú</h3><div class="app-sidebar__panel"><div id="pv_id_3" class="p-panelmenu p-component" data-pc-name="panelmenu" pc3="" data-pc-section="root"><div class="p-panelmenu-panel" data-pc-section="panel"><div id="pv_id_3_0_header" class="p-panelmenu-header" tabindex="0" role="button" aria-label="Principal" aria-controls="pv_id_3_0_content" data-pc-section="header"><div class="p-panelmenu-header-content" data-pc-section="headercontent"><a href="/home" class="p-panelmenu-header-action"><span class="p-panelmenu-header-icon mdi mdi-home" data-pc-section="headericon"></span><span class="p-panelmenu-header-label" data-pc-section="headerlabel">Principal</span></a></div></div><div id="pv_id_3_0_content" class="p-panelmenu-content-container" role="region" aria-labelledby="pv_id_3_0_header" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><!----></div></div></div></div><div id="pv_id_17" class="p-panelmenu p-component" data-pc-name="panelmenu" pc17="" data-pc-section="root"><div class="p-panelmenu-panel" data-pc-section="panel"><div id="pv_id_17_0_header" class="p-panelmenu-header" tabindex="0" role="button" aria-label="Mis cursos" aria-controls="pv_id_17_0_content" data-pc-section="header"><div class="p-panelmenu-header-content" data-pc-section="headercontent"><a href="/courses" class="p-panelmenu-header-action"><span class="p-panelmenu-header-icon mdi mdi-book-open-page-variant" data-pc-section="headericon"></span><span class="p-panelmenu-header-label" data-pc-section="headerlabel">Mis cursos</span></a></div></div><div id="pv_id_17_0_content" class="p-panelmenu-content-container" role="region" aria-labelledby="pv_id_17_0_header" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><!----></div></div></div></div><div id="pv_id_4" class="p-panelmenu p-component" data-pc-name="panelmenu" pc4="" data-pc-section="root"><div class="p-panelmenu-panel" data-pc-section="panel"><div id="pv_id_4_0_header" class="p-panelmenu-header" tabindex="0" role="button" aria-label="Explorar más cursos" aria-controls="pv_id_4_0_content" data-pc-section="header"><div class="p-panelmenu-header-content" data-pc-section="headercontent"><a href="/catalogue/courses" class="p-panelmenu-header-action"><span class="p-panelmenu-header-icon mdi mdi-bookmark-multiple" data-pc-section="headericon"></span><span class="p-panelmenu-header-label" data-pc-section="headerlabel">Explorar más cursos</span></a></div></div><div id="pv_id_4_0_content" class="p-panelmenu-content-container" role="region" aria-labelledby="pv_id_4_0_header" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><!----></div></div></div><div class="p-panelmenu-panel" data-pc-section="panel"><div id="pv_id_4_1_header" class="p-panelmenu-header" tabindex="0" role="button" aria-label="Agenda" aria-controls="pv_id_4_1_content" data-pc-section="header"><div class="p-panelmenu-header-content" data-pc-section="headercontent"><a href="/resources/ccalendarevent" class="p-panelmenu-header-action"><span class="p-panelmenu-header-icon mdi mdi-calendar-text" data-pc-section="headericon"></span><span class="p-panelmenu-header-label" data-pc-section="headerlabel">Agenda</span></a></div></div><div id="pv_id_4_1_content" class="p-panelmenu-content-container" role="region" aria-labelledby="pv_id_4_1_header" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><!----></div></div></div><div class="p-panelmenu-panel" data-pc-section="panel"><div id="pv_id_4_2_header" class="p-panelmenu-header" tabindex="0" role="button" aria-label="Informes" aria-controls="pv_id_4_2_content" data-pc-section="header"><div class="p-panelmenu-header-content" data-pc-section="headercontent"><a class="p-panelmenu-header-action"><span class="p-panelmenu-header-icon mdi mdi-chart-box" data-pc-section="headericon"></span><span class="p-panelmenu-header-label" data-pc-section="headerlabel">Informes</span><span class="base-icon base-icon--normal p-icon p-submenu-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i><!-- Optional badge: supports text or a chamilo icon --><!--v-if--><!-- Optional tooltip shown below on hover --><!--v-if--></span></a></div></div><div id="pv_id_4_2_content" class="p-panelmenu-content-container" role="region" aria-labelledby="pv_id_4_2_header" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><div class="p-panelmenu-content" data-pc-section="content"><ul class="p-panelmenu-submenu p-panelmenu-root-list" tabindex="-1" id="pv_id_4_2_list" role="tree" data-pc-section="rootlist"><li id="pv_id_4_2_0" class="p-panelmenu-item" role="treeitem" aria-label="Progreso" aria-level="1" aria-setsize="1" aria-posinset="1" data-pc-section="item" data-p-focused="false"><div class="p-panelmenu-item-content" data-pc-section="itemcontent"><a href="/main/auth/my_progress.php" class="p-menuitem-link"><span class="p-panelmenu-item-icon" data-pc-section="itemicon"></span><span class="p-panelmenu-item-label" data-pc-section="itemlabel">Progreso</span></a></div><div class="p-panelmenu-content-container" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><!----></div></div></li><!----></ul></div></div></div></div><div class="p-panelmenu-panel" data-pc-section="panel"><div id="pv_id_4_3_header" class="p-panelmenu-header" tabindex="0" role="button" aria-label="Red social" aria-controls="pv_id_4_3_content" data-pc-section="header"><div class="p-panelmenu-header-content" data-pc-section="headercontent"><a class="p-panelmenu-header-action"><span class="p-panelmenu-header-icon mdi mdi-sitemap-outline" data-pc-section="headericon"></span><span class="p-panelmenu-header-label" data-pc-section="headerlabel">Red social</span><span class="base-icon base-icon--normal p-icon p-submenu-icon"><i class="mdi mdi-chevron-down" aria-hidden="true"></i><!-- Optional badge: supports text or a chamilo icon --><!--v-if--><!-- Optional tooltip shown below on hover --><!--v-if--></span></a></div></div><div id="pv_id_4_3_content" class="p-panelmenu-content-container" role="region" aria-labelledby="pv_id_4_3_header" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><div class="p-panelmenu-content" data-pc-section="content"><ul class="p-panelmenu-submenu p-panelmenu-root-list" tabindex="-1" id="pv_id_4_3_list" role="tree" data-pc-section="rootlist"><li id="pv_id_4_3_0" class="p-panelmenu-item pl-4" role="treeitem" aria-label="Principal" aria-level="1" aria-setsize="6" aria-posinset="1" data-pc-section="item" data-p-focused="false"><div class="p-panelmenu-item-content" data-pc-section="itemcontent"><a href="/social" class="p-menuitem-link"><span class="p-panelmenu-item-icon mdi mdi-home" data-pc-section="itemicon"></span><span class="p-panelmenu-item-label" data-pc-section="itemlabel">Principal</span></a></div><div class="p-panelmenu-content-container" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><!----></div></div></li><!----><li id="pv_id_4_3_1" class="p-panelmenu-item pl-4" role="treeitem" aria-label="Mensajes" aria-level="1" aria-setsize="6" aria-posinset="2" data-pc-section="item" data-p-focused="false"><div class="p-panelmenu-item-content" data-pc-section="itemcontent"><a href="/resources/messages" class="p-menuitem-link"><span class="p-panelmenu-item-icon mdi mdi-email" data-pc-section="itemicon"></span><span class="p-panelmenu-item-label" data-pc-section="itemlabel">Mensajes</span></a></div><div class="p-panelmenu-content-container" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><!----></div></div></li><!----><li id="pv_id_4_3_2" class="p-panelmenu-item pl-4" role="treeitem" aria-label="Mis amigos" aria-level="1" aria-setsize="6" aria-posinset="3" data-pc-section="item" data-p-focused="false"><div class="p-panelmenu-item-content" data-pc-section="itemcontent"><a href="/resources/friends" class="p-menuitem-link"><span class="p-panelmenu-item-icon mdi mdi-handshake" data-pc-section="itemicon"></span><span class="p-panelmenu-item-label" data-pc-section="itemlabel">Mis amigos</span></a></div><div class="p-panelmenu-content-container" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><!----></div></div></li><!----><li id="pv_id_4_3_3" class="p-panelmenu-item pl-4" role="treeitem" aria-label="Grupos" aria-level="1" aria-setsize="6" aria-posinset="4" data-pc-section="item" data-p-focused="false"><div class="p-panelmenu-item-content" data-pc-section="itemcontent"><a href="/resources/usergroups" class="p-menuitem-link"><span class="p-panelmenu-item-icon mdi mdi-group" data-pc-section="itemicon"></span><span class="p-panelmenu-item-label" data-pc-section="itemlabel">Grupos</span></a></div><div class="p-panelmenu-content-container" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><!----></div></div></li><!----><li id="pv_id_4_3_4" class="p-panelmenu-item pl-4" role="treeitem" aria-label="Mis archivos" aria-level="1" aria-setsize="6" aria-posinset="5" data-pc-section="item" data-p-focused="false"><div class="p-panelmenu-item-content" data-pc-section="itemcontent"><a href="/resources/personal_files/82/" class="p-menuitem-link"><span class="p-panelmenu-item-icon mdi mdi-briefcase" data-pc-section="itemicon"></span><span class="p-panelmenu-item-label" data-pc-section="itemlabel">Mis archivos</span></a></div><div class="p-panelmenu-content-container" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><!----></div></div></li><!----><li id="pv_id_4_3_5" class="p-panelmenu-item pl-4" role="treeitem" aria-label="Datos personales" aria-level="1" aria-setsize="6" aria-posinset="6" data-pc-section="item" data-p-focused="false"><div class="p-panelmenu-item-content" data-pc-section="itemcontent"><a href="/resources/users/personal_data" class="p-menuitem-link"><span class="p-panelmenu-item-icon mdi mdi-account" data-pc-section="itemicon"></span><span class="p-panelmenu-item-label" data-pc-section="itemlabel">Datos personales</span></a></div><div class="p-panelmenu-content-container" data-pc-section="contentcontainer" style="display: none;"><div class="p-panelmenu-content-wrapper" data-pc-section="contentwrapper"><!----></div></div></li><!----></ul></div></div></div></div></div></div><div class="app-sidebar__bottom"><!--v-if--><div class="mt-auto"></div><p>Creado con Chamilo © 2026</p></div><a class="app-sidebar__logout-link" href="/logout"><span class="mdi mdi-logout-variant"></span><span class="logout-text">Cerrar sesión</span></a></div><button type="button" class="p-togglebutton p-component p-togglebutton-checked app-sidebar__button" aria-pressed="true" data-pc-name="togglebutton" pc9="" data-pc-section="root" data-p-checked="true" data-p-disabled="false" data-p="checked"><span class="p-togglebutton-content" data-pc-section="content" data-p="checked"><span class="p-togglebutton-icon mdi mdi-chevron-left" data-pc-section="icon"></span><span class="p-togglebutton-label" data-pc-section="label">Yes</span></span></button></aside><div class="app-main" style=""><div class="app-breadcrumb"><nav class="p-breadcrumb p-component" data-pc-name="breadcrumb" pc13="" data-pc-section="root"><ol class="p-breadcrumb-list" data-pc-section="list"><li class="p-breadcrumb-item p-breadcrumb-home-item" data-pc-section="homeitem"><span class="base-icon base-icon--small"><i class="mdi mdi-compass-outline" aria-hidden="true"></i><!-- Optional badge: supports text or a chamilo icon --><!--v-if--><!-- Optional tooltip shown below on hover --><!--v-if--></span><a href="/courses" class="p-breadcrumb-item-link" data-pc-section="itemlink">Mis cursos</a></li><li class="p-breadcrumb-separator" data-pc-section="separator"> /</li><li class="p-breadcrumb-item" data-pc-section="item"><!--v-if--><a href="/course/1/home" class="p-breadcrumb-item-link" data-pc-section="itemlink">Enseñar en la era Digital: Propuestas con recursos digitales para el aula</a></li><li class="p-breadcrumb-separator" data-pc-section="separator"> /</li><li class="p-breadcrumb-item" data-pc-section="item"><!--v-if--><span class="p-breadcrumb-item-link" data-pc-section="itemlink">Agenda</span></li></ol></nav><!--v-if--></div><!----><!-- 403 banner shown INSIDE the layout --><!--v-if--><div id="legacy_content"><section id="sectionMainContent" class="section-content" style="display: block;">
+                                    
+                        
+                                        <div class="ch-actions-wrapper" aria-label="Page actions">
+                    <div id="toolbar-agenda" class="toolbar-action p-toolbar p-component flex items-center justify-between flex-wrap w-full" role="toolbar">
+            <div class="p-toolbar-group-start p-toolbar-group-left"><a href="https://chamilo.educa.website/main/calendar/agenda_js.php?type=course&amp;cid=1&amp;sid=0&amp;gid=0&amp;gradebook=1&amp;origin="><i class="mdi mdi-calendar-text ch-tool-icon" style="font-size: 32px; width: 32px; height: 32px; " aria-hidden="true" title="Calendario"></i></a><a href="https://chamilo.educa.website/main/calendar/agenda_list.php?type=course&amp;cid=1&amp;sid=0&amp;gid=0&amp;gradebook=1&amp;origin="><i class="mdi mdi-calendar-week ch-tool-icon" style="font-size: 32px; width: 32px; height: 32px; " aria-hidden="true" title="Lista agenda"></i></a></div>
+            <div class="p-toolbar-group-center"></div>
+            <div class="p-toolbar-group-end p-toolbar-group-right"></div>
+        </div>
+                </div>
+            
+                            <script>
+    function checkLength( o, n, min, max ) {
+        if ( o.val().length > max || o.val().length < min ) {
+            o.addClass( "ui-state-error" );
+            /*updateTips( "Length of " + n + " must be between " +
+                min + " and " + max + "." );*/
+            return false;
+        } else {
+            return true;
+        }
+    }
+    function clean_user_select() {
+        //Cleans the selected attr
+        $("#users_to_send").val('').trigger("chosen:updated");
+    }
+
+    var region_value = 'es';
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var cookieData = Cookies.getJSON('agenda_cookies');
+        var defaultView = (cookieData && cookieData.view) || 'dayGridMonth';
+        var defaultStartDate = (cookieData && cookieData.start) || luxon.now().toString();
+
+        // Reset button.
+        $("button[type=reset]").click(function() {
+            $("#session_id").find('option').removeAttr("selected");
+        });
+
+        function loadColors(calEvent){
+            $("#calendarModal #color_calendar").removeClass();
+            $("#calendarModal #color_calendar").html('CourseCalendar');
+            $("#calendarModal #color_calendar").addClass('label_tag');
+            $("#calendarModal #color_calendar").addClass(calEvent.type+'_event');
+        }
+
+        var title = $("#title"),
+            content = $("#content"),
+            allFields = $([]).add( title ).add( content ), tips = $(".validateTips");
+
+        $("#select_form_id_search").change(function() {
+            var temp ="&user_id="+$("#select_form_id_search").val();
+            var position =String(window.location).indexOf("&user");
+            var url = String(window.location).substring(0,position)+temp;
+            if (position > 0) {
+                window.location.replace(url);
+            } else {
+                url = String(window.location)+temp;
+                window.location.replace(url);
+            }
+        });
+
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            editable: true,
+            themeSystem: 'bootstrap',
+            contentHeight: 650,
+            handleWindowResize: true,
+            headerToolbar: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,listWeek,dayGridWeek,listMonth'
+            },
+            views: {
+                /*listDay: { buttonText: 'list day' },
+                listWeek: { buttonText: 'list week' },*/
+                listMonth: { buttonText: 'list month' },
+            },
+            locale: region_value,
+                        initialView: defaultView,
+            initialDate: defaultStartDate,
+            scrollTime: 8,
+            firstDay: 1,
+            selectable	: true,
+            selectMirror: true,
+            eventSourceSuccess: function() {
+                var date = this.getDate();
+                var view = calendar.view;
+                var data = {
+                    'view': view.type,
+                    'start': date
+                };
+              Cookies.set('agenda_cookies', data, { expires: 1, secure: true }); // Expires 1 day
+            },
+            viewDidMount: function(dateInfo) {
+                var view = dateInfo.view;
+                var data = {
+                    'view': view.type,
+                    //'start': view.intervalStart.format("YYYY-MM-DD")
+                    'start': dateInfo.currentStart
+                };
+              Cookies.set('agenda_cookies', data, { expires: 1, secure: true }); // Expires 1 day
+            },
+            // Add event
+            select: function(info) {
+                console.log(info);
+                let start = luxon.fromJSDate(info.start);
+                let end = luxon.fromJSDate(info.end);
+                let diffDays = end.diff(start, ["days"]).days;
+
+                //var diffDays = moment(end).diff(start, 'days');
+                var allDay = info.allDay;
+                var view = info.view;
+
+                $('#visible_to_input').show();
+                $('#add_as_announcement_div').show();
+                $('#visible_to_read_only').hide();
+
+                // Cleans the selected attr
+                clean_user_select();
+
+                // Sets the 1st item selected by default
+                $('#users_to_send option').eq(0).attr('selected', 'selected');
+
+                // Update chz-select
+                //$("#users_to_send").trigger("chosen:updated");
+                if (0 == 1) {
+			    /*var startEn = start.clone().locale('en'),
+                    endEn = end.clone().locale('en');*/
+
+				var url = 'https://chamilo.educa.website/main/inc/ajax/agenda.ajax.php?type=course&cid=1&sid=0&gid=0&gradebook=1&origin=&sec_token=0b87a8d1c389bad9c2e40906654c1fd6&a=add_event&start='+start+'&end='+end+'&all_day='+allDay+'&view='+view.name;
+                    var start_date_value = start.toFormat('ll');
+                    $('#start_date').html(start_date_value);
+
+                    if (diffDays > 0) {
+                        $('#start_date').html('');
+                        var end_date_value = '';
+                        if (end) {
+                            //var clone = end.clone();
+                            //end_date_value = clone.subtract(1, 'days').format('ll');
+                            end_date_value = end.toFormat('ll');
+                        }
+                        $('#end_date').html(start_date_value + " - " + end_date_value);
+                    } else if (diffDays === 0) {
+                        var start_date_value = start.toFormat('ll');
+                        var startTime = start.toFormat('LT');
+                        var endTime = end.toFormat('LT');
+                        $('#start_date').html('');
+                        $('#end_date').html(start_date_value + " (" + startTime + " - " + endTime+") ");
+                    } else {
+                        $('#end_date').html('');
+                    }
+
+                    $('#color_calendar')
+                        .html('CourseCalendar')
+                        .removeClass('group_event')
+                        .addClass('label_tag')
+                        .addClass('course_event')
+                        .css('background-color', '#458B00');
+
+                    //It shows the CKEDITOR while Adding an Event
+                    $('#cke_content').show();
+                    //Reset the CKEditor content that persist in memory
+                    CKEDITOR.instances['content'].setData('');
+                    allFields.removeClass("ui-state-error");
+                    $("#modalDialogForm").modal();
+                    var btnSave = '<button id="btnSave" type="button" class="btn btn--primary">Añadir</button>';
+                    $("#modalDialogForm #modalFooter").html(btnSave);
+
+                    $("#btnSave").click( function() {
+                        var bValid = true;
+                        bValid = bValid && checkLength(title, "title", 1, 255);
+
+                        //Update the CKEditor Instance to the remplaced textarea, ready to be serializable
+                        for ( instance in CKEDITOR.instances ) {
+                            CKEDITOR.instances[instance].updateElement();
+                        }
+
+                        var params = $("#add_event_form").serialize();
+
+                        $.ajax({
+                            url: url+'&'+params,
+                            success:function(data) {
+                                var user = $('#users_to_send').val();
+                                if (user) {
+                                    if (user.length > 1) {
+                                        user = 0;
+                                    } else {
+                                        user = user[0];
+                                    }
+                                    var user_length = String(user).length;
+                                    if (String(user).substring(0,1) == 'G') {
+                                        var user_id = String(user).substring(6,user_length);
+                                        var user_id = "G:"+user_id;
+                                    } else {
+                                        var user_id = String(user).substring(5,user_length);
+                                    }
+                                    //var temp = "&user_id="+user_id;
+                                    //var position = String(window.location).indexOf("&user");
+                                    //var url = String(window.location).substring(0, position)+temp;
+                                    /*if (position > 0) {
+                                        window.location.replace(url);
+                                    } else {
+                                        url = String(window.location)+temp;
+                                        window.location.replace(url);
+                                    }*/
+                                }
+                                calendar.refetchEvents();
+                                $('#modalDialogForm').modal('toggle');
+                            }
+                        });
+                    });
+
+                    // Reload events
+                    calendar.refetchEvents();
+                    calendar.unselect();
+                }
+            },
+            eventClick: function(info) {
+                var event = info.event;
+                var view = info.view;
+                /*var start = event.start;
+                var end = event.end;*/
+
+                /*var momentStart = moment(start);
+                var momentEnd = moment(end);
+                var diffDays = moment(end).diff(start, 'days');*/
+
+                let start = luxon.fromJSDate(info.start);
+                let end = luxon.fromJSDate(info.end);
+                let diffDays = end.diff(start, ["days"]).days;
+
+                var endDateMinusOne = '';
+                if (end) {
+                    //var clone = end.clone();
+                    //var endValue = moment(end);
+                    //endDateMinusOne = endValue.subtract(1, 'days').format('ll');
+                    endDateMinusOne = end.toFormat('ll');
+                }
+                var startDateToString = start.toFormat("ll");
+                var calEvent = info.event.extendedProps;
+                var editable = calEvent.resourceEditable;
+                // Edit event.
+                if (editable) {
+                    $('#visible_to_input').hide();
+                    $('#add_as_announcement_div').hide();
+                                            $('#visible_to_read_only').show();
+                        $("#visible_to_read_only_users").html(calEvent.sent_to);
+                        $(".user-sender").show();
+                    
+                    loadColors(calEvent);
+
+                    $('#simple_start_date').html(startDateToString);
+                    if (diffDays > 1) {
+                        $('#simple_end_date').html(' - ' + endDateMinusOne);
+                    } else if (diffDays == 0) {
+                        var start_date_value = start.toFormat('ll');
+                        var startTime = start.toFormat('LT');
+                        var endTime = start.toFormat('LT');
+                        $('#simple_start_date').html('');
+                        $('#simple_end_date').html(start_date_value + " (" + startTime + " - " + endTime+") ");
+                    } else {
+                        $('#simple_end_date').html('');
+                    }
+
+                    $("#simple_title").html(event.title);
+                    $("#simple_content").html(calEvent.description);
+                    $("#simple_comment").html(calEvent.comment);
+                    $("#simple_attachment").html(calEvent.attachment);
+                    $("#calendar_course_info_simple").html('');
+
+                    if (calEvent.course_name) {
+                        $("#calendar_course_info_simple").html(calEvent.course_name);
+                        $("#type_course").html("Curso");
+                    }
+
+                    if (calEvent.session_name) {
+                        $("#calendar_course_info_simple").html(calEvent.session_name);
+                        $('#type_course').html("Sesión");
+                    }
+
+                    if (calEvent.comment != '') {
+                        $("#comment_edit").html(calEvent.comment);
+                        $("#comment_edit").show();
+                    }
+
+                    if (calEvent.attachment != '') {
+                        $("#attachment_text").html(calEvent.attachment);
+                        $("#attachment_block").show();
+                        $("#attachment_text").show();
+                    }
+
+                    allFields.removeClass( "ui-state-error" );
+
+                    $('#calendarModal #modalTitle').html(event.title);
+                    $('#calendarModal').modal();
+
+                    var url = 'https://chamilo.educa.website/main/inc/ajax/agenda.ajax.php?type=course&cid=1&sid=0&gid=0&gradebook=1&origin=&sec_token=0b87a8d1c389bad9c2e40906654c1fd6&a=edit_event&id='+event.id+'&view='+view.name;
+                    var delete_url = 'https://chamilo.educa.website/main/inc/ajax/agenda.ajax.php?type=course&cid=1&sid=0&gid=0&gradebook=1&origin=&sec_token=0b87a8d1c389bad9c2e40906654c1fd6&a=delete_event&id='+event.id;
+
+                    var urlOne = "main/calendar/ical_export.php?id=" + event.id+'&course_id='+calEvent.course_id+"&class=confidential";
+                    var urlTwo = "main/calendar/ical_export.php?id=" + event.id+'&course_id='+calEvent.course_id+"&class=private";
+                    var urlThree = "main/calendar/ical_export.php?id=" + event.id+'&course_id='+calEvent.course_id+"&class=public";
+                    var urlEdit = "main/calendar/agenda.php?action=edit&type=fromjs&id="+event.id+'&course_id='+calEvent.course_id+"";
+
+                    var exportCalConfidential = '<a href="'+urlOne+'" class="btn btn-light">Exportar en formato iCal como evento confidencial</a>';
+                    var exportCalPrivate = '<a href="'+urlTwo+'" class="btn btn-light">Exportar en formato iCal como evento privado</a>';
+                    var exportCalPublic = '<a href="'+urlThree+'" class="btn btn-light">Exportar en formato iCal como evento público</a>';
+                    var btnEdit = '<a href="'+urlEdit+'" id="btnEdit" class="btn btn--primary">Editar</a>';
+                    var btnDelete = '<button type="button" id="btnDelete" class="btn btn--danger">Eliminar la lección</button>';
+
+                    $('#calendarModal #modalFooter').html(exportCalConfidential+exportCalPrivate+exportCalPublic+btnEdit+btnDelete);
+
+                    
+                    $('#btnDelete').click(function() {
+                        if (calEvent.parent_event_id || calEvent.has_children != '') {
+                            var newDiv = $('<div>');
+                            newDiv.dialog({
+                                modal: true,
+                                title: "Borrar este elemento",
+                                buttons: []
+                            });
+
+                            var buttons = newDiv.dialog("option", "buttons");
+                            if (calEvent.has_children == '0') {
+                                buttons.push({
+                                    text: 'Borrar este elemento',
+                                    click: function() {
+                                        $.ajax({
+                                            url: delete_url,
+                                            success:function() {
+                                                //calendar.fullCalendar('removeEvents', calEvent);
+                                                event.remove();
+                                                calendar.refetchEvents();
+                                                //calendar.fullCalendar('refetchEvents');
+                                                //calendar.fullCalendar('rerenderEvents');
+                                                $("#dialog-form").dialog("close");
+                                                newDiv.dialog( "destroy" );
+                                            }
+                                        });
+                                    }
+                                });
+                                newDiv.dialog("option", "buttons", buttons);
+                            }
+
+                            var buttons = newDiv.dialog("option", "buttons");
+                            buttons.push({
+                                text: 'Borrar todos los elementos',
+                                click: function() {
+                                    $.ajax({
+                                        url: delete_url+'&delete_all_events=1',
+                                        success:function() {
+                                            //calendar.fullCalendar('removeEvents', calEvent);
+                                            event.remove();
+                                            calendar.refetchEvents();
+                                            //calendar.fullCalendar('refetchEvents');
+                                            //calendar.fullCalendar('rerenderEvents');
+                                            $("#dialog-form").dialog('close');
+                                            newDiv.dialog( "destroy" );
+                                        }
+                                    });
+                                }
+                            });
+                            newDiv.dialog("option", "buttons", buttons);
+
+                            return true;
+                        }
+
+                        $.ajax({
+                            url: delete_url,
+                            success:function() {
+                                event.remove();
+                                calendar.refetchEvents();
+                                /*calendar.fullCalendar('removeEvents', calEvent);
+                                calendar.fullCalendar('refetchEvents');
+                                calendar.fullCalendar('rerenderEvents');*/
+                                //close modal
+                                $('#calendarModal').modal('toggle');
+                            }
+                        });
+                    });
+                } else {
+                    // Simple form
+                    $('#simple_start_date').html(startDateToString);
+                    if (diffDays > 1) {
+                        $('#simple_end_date').html(' - ' + endDateMinusOne);
+                    } else if (diffDays == 0) {
+                        var start_date_value = start.format('ll');
+                        var startTime = start.format('LT');
+                        var endTime = end.format('LT');
+                        $('#simple_start_date').html('');
+                        $('#simple_end_date').html(start_date_value + " (" + startTime + " - " + endTime+") ");
+                    } else {
+                        $('#simple_end_date').html('');
+                    }
+
+                    loadColors(calEvent);
+
+                    if (calEvent.course_name) {
+                        $("#calendar_course_info_simple").html(calEvent.course_name);
+                        $("#type_course").html("Curso");
+                    } else {
+                        $("#calendar_course_info_simple").html('');
+                    }
+
+                    if (calEvent.session_name) {
+                        $("#type_course").append("Sesión");
+                        $("#calendar_session_info").html(calEvent.session_name);
+                    } else {
+                        $("#calendar_session_info").html('');
+                    }
+
+                    $("#simple_title").html(calEvent.title);
+                    $("#simple_content").html(calEvent.description);
+                    $("#simple_comment").html(calEvent.comment);
+                    $('#modalTitle').html(calEvent.title);
+                    $('#calendarModal').modal();
+
+                    var urlOne =  "ical_export.php?id=" + calEvent.id+'&course_id='+calEvent.course_id+"&class=confidential";
+                    var exportCalConfidential = '<a href="'+urlOne+'" class="btn btn-light">Exportar en formato iCal como evento confidencial</a>';
+                    var urlTwo =  "ical_export.php?id=" + calEvent.id+'&course_id='+calEvent.course_id+"&class=private";
+                    var exportCalPrivate = '<a href="'+urlTwo+'" class="btn btn-light">Exportar en formato iCal como evento privado</a>';
+                    var urlThree =  "ical_export.php?id=" + calEvent.id+'&course_id='+calEvent.course_id+"&class=public";
+                    var exportCalPublic = '<a href="'+urlThree+'" class="btn btn-light">Exportar en formato iCal como evento público</a>';
+
+                    $('#calendarModal #modalFooter').html(exportCalConfidential+exportCalPrivate+exportCalPublic);
+
+                }
+            },
+            events: "https://chamilo.educa.website/main/inc/ajax/agenda.ajax.php?type=course&cid=1&sid=0&gid=0&gradebook=1&origin=&sec_token=0b87a8d1c389bad9c2e40906654c1fd6&a=get_events",
+            eventDrop: function(event, delta, revert_func) {
+                var allDay = 0;
+                if (event.allDay == true) {
+                    allDay = 1;
+                }
+                $.ajax({
+                    url: 'https://chamilo.educa.website/main/inc/ajax/agenda.ajax.php?type=course&cid=1&sid=0&gid=0&gradebook=1&origin=&sec_token=0b87a8d1c389bad9c2e40906654c1fd6',
+                    data: {
+                        a: 'move_event',
+                        id: event.id,
+                        all_day: allDay,
+                        minute_delta: delta.asMinutes()
+                    }
+                });
+            },
+            eventResize: function(event, delta, revert_func) {
+                $.ajax({
+                    url: 'https://chamilo.educa.website/main/inc/ajax/agenda.ajax.php?type=course&cid=1&sid=0&gid=0&gradebook=1&origin=&sec_token=0b87a8d1c389bad9c2e40906654c1fd6',
+                    data: {
+                        a: 'resize_event',
+                        id: event.id,
+                        minute_delta: delta.asMinutes()
+                    }
+                });
+            },
+            slotLabelFormat: 'H(:mm)', // pm-am format -> h(:mm)a
+            ///timeFormat: 'H:mm',   // pm-am format -> h:mm
+            eventTimeFormat:{
+                hour: 'numeric',
+                minute: '2-digit',
+                meridiem: false
+            },
+            loading: function(bool) {
+                if (bool) $('#loading').show();
+                else $('#loading').hide();
+            }
+        });
+
+        calendar.render();
+    });
+</script>
+
+
+
+<div id="loading" style="margin-left:150px;position:absolute;display:none">
+    Cargando...
+</div>
+
+<div id="calendar"></div>
+
+<div id="modalDialogForm" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Añadir un nuevo evento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="add_event_form" action="/main/calendar/agenda_js.php?cid=1&amp;sid=0&amp;gid=0&amp;gradebook=1&amp;origin=" method="get" name="form" data-a11y-bound="1" data-a11y-focused-once="1">
+                <span id="calendar_course_info"></span><div id="visible_to_input"><div class="field">
+                    <div class="p-floatlabel p-floatlabel-on">
+                        <select id="users_to_send_id" data-placeholder="Seleccionar" multiple="multiple" class="  p-select p-component p-inputwrapper p-inputwrapper-filled" name="users_to_send[]">
+<option value="everyone" selected="selected">Todos</option><optgroup label="Grupos"></optgroup><optgroup label="Usuarios"> <option value="USER:5">FLORENCIA FERREYRA (fferreyra)</option> <option value="USER:4">Gabriel Benselum (gbenselum)</option> <option value="USER:6">LAURA BOSIO (lbosio)</option> <option value="USER:1">Natalia Ausilio (admin)</option> <option value="USER:8">Paula Gonzalez (PauGonzalez)</option> <option value="USER:7">UTN UTN (utn_user)</option></optgroup></select>
+                        
+                        <label for="users_to_send_id">
+                            Para
+                        </label>
+                    </div></div></div><div id="visible_to_read_only" style="display: none">
+                <div class="field 2">
+                    <!-- div class="8" -->
+                        
+                        <label for="form_" class="h-4 ">
+                            Para
+                        </label>
+                        <div id="visible_to_read_only_users"></div>
+                    <!-- /div --></div></div>
+                <div class="field 2">
+                    <!-- div class="8" -->
+                        
+                        <label for="form_" class="h-4 ">
+                            Agenda
+                        </label>
+                        <div id="color_calendar"></div>
+                    <!-- /div --></div>
+                <div class="field 2">
+                    <!-- div class="8" -->
+                        
+                        <label for="form_" class="h-4 ">
+                            Fecha
+                        </label>
+                        <span id="start_date"></span><span id="end_date"></span>
+                    <!-- /div --></div>
+                <div class="field">
+                    <div class="p-floatlabel p-floatlabel-on">
+                        <input id="title" name="title" type="text" class=" p-inputtext p-component p-filled " style="">
+                        
+                        <label for="title">
+                            Título
+                        </label>
+                    </div></div>
+                <div class="field">
+                    <div class="p-floatlabel p-floatlabel-on">
+                        <div class="html-editor-container">
+                            <textarea id="content" name="content" style="display: none;" aria-hidden="true"></textarea><div role="application" class="tox tox-tinymce" aria-disabled="false" style="visibility: hidden; height: 300px;"><div class="tox-editor-container"><div data-alloy-vertical-dir="toptobottom" class="tox-editor-header"><div role="group" class="tox-toolbar-overlord" aria-disabled="false"><div role="group" class="tox-toolbar__primary"><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Deshacer" title="Deshacer" type="button" tabindex="-1" class="tox-tbtn tox-tbtn--disabled" aria-disabled="true"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M6.4 8H12c3.7 0 6.2 2 6.8 5.1.6 2.7-.4 5.6-2.3 6.8a1 1 0 01-1-1.8c1.1-.6 1.8-2.7 1.4-4.6-.5-2.1-2.1-3.5-4.9-3.5H6.4l3.3 3.3a1 1 0 11-1.4 1.4l-5-5a1 1 0 010-1.4l5-5a1 1 0 011.4 1.4L6.4 8z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Rehacer" title="Rehacer" type="button" tabindex="-1" class="tox-tbtn tox-tbtn--disabled" aria-disabled="true"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M17.6 10H12c-2.8 0-4.4 1.4-4.9 3.5-.4 2 .3 4 1.4 4.6a1 1 0 11-1 1.8c-2-1.2-2.9-4.1-2.3-6.8.6-3 3-5.1 6.8-5.1h5.6l-3.3-3.3a1 1 0 111.4-1.4l5 5a1 1 0 010 1.4l-5 5a1 1 0 01-1.4-1.4l3.3-3.3z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Negrita" title="Negrita" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M7.8 19c-.3 0-.5 0-.6-.2l-.2-.5V5.7c0-.2 0-.4.2-.5l.6-.2h5c1.5 0 2.7.3 3.5 1 .7.6 1.1 1.4 1.1 2.5a3 3 0 01-.6 1.9c-.4.6-1 1-1.6 1.2.4.1.9.3 1.3.6s.8.7 1 1.2c.4.4.5 1 .5 1.6 0 1.3-.4 2.3-1.3 3-.8.7-2.1 1-3.8 1H7.8zm5-8.3c.6 0 1.2-.1 1.6-.5.4-.3.6-.7.6-1.3 0-1.1-.8-1.7-2.3-1.7H9.3v3.5h3.4zm.5 6c.7 0 1.3-.1 1.7-.4.4-.4.6-.9.6-1.5s-.2-1-.7-1.4c-.4-.3-1-.4-2-.4H9.4v3.8h4z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Cursiva" title="Cursiva" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M16.7 4.7l-.1.9h-.3c-.6 0-1 0-1.4.3-.3.3-.4.6-.5 1.1l-2.1 9.8v.6c0 .5.4.8 1.4.8h.2l-.2.8H8l.2-.8h.2c1.1 0 1.8-.5 2-1.5l2-9.8.1-.5c0-.6-.4-.8-1.4-.8h-.3l.2-.9h5.8z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Subrayado" title="Subrayado" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M16 5c.6 0 1 .4 1 1v5.5a4 4 0 01-.4 1.8l-1 1.4a5.3 5.3 0 01-5.5 1 5 5 0 01-1.6-1c-.5-.4-.8-.9-1.1-1.4a4 4 0 01-.4-1.8V6c0-.6.4-1 1-1s1 .4 1 1v5.5c0 .3 0 .6.2 1l.6.7a3.3 3.3 0 002.2.8 3.4 3.4 0 002.2-.8c.3-.2.4-.5.6-.8l.2-.9V6c0-.6.4-1 1-1zM8 17h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 010-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Tachado" title="Tachado" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><g fill-rule="evenodd"><path d="M15.6 8.5c-.5-.7-1-1.1-1.3-1.3-.6-.4-1.3-.6-2-.6-2.7 0-2.8 1.7-2.8 2.1 0 1.6 1.8 2 3.2 2.3 4.4.9 4.6 2.8 4.6 3.9 0 1.4-.7 4.1-5 4.1A6.2 6.2 0 017 16.4l1.5-1.1c.4.6 1.6 2 3.7 2 1.6 0 2.5-.4 3-1.2.4-.8.3-2-.8-2.6-.7-.4-1.6-.7-2.9-1-1-.2-3.9-.8-3.9-3.6C7.6 6 10.3 5 12.4 5c2.9 0 4.2 1.6 4.7 2.4l-1.5 1.1z"></path><path d="M5 11h14a1 1 0 010 2H5a1 1 0 010-2z" fill-rule="nonzero"></path></g></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Alinear a la izquierda" title="Alinear a la izquierda" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 4h8c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2zm0-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Alinear al centro" title="Alinear al centro" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm3 4h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 110-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 010-2zm-3-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Alinear a la derecha" title="Alinear a la derecha" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm6 4h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm-6-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Justificar" title="Justificar" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><div aria-pressed="false" aria-label="Lista de viñetas" title="Lista de viñetas" role="button" aria-haspopup="true" tabindex="-1" unselectable="on" class="tox-split-button" aria-disabled="false" aria-expanded="false" aria-describedby="aria_1344990271971790387495709" style="user-select: none;"><span role="presentation" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M11 5h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm0 6h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm0 6h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zM4.5 6c0-.4.1-.8.4-1 .3-.4.7-.5 1.1-.5.4 0 .8.1 1 .4.4.3.5.7.5 1.1 0 .4-.1.8-.4 1-.3.4-.7.5-1.1.5-.4 0-.8-.1-1-.4-.4-.3-.5-.7-.5-1.1zm0 6c0-.4.1-.8.4-1 .3-.4.7-.5 1.1-.5.4 0 .8.1 1 .4.4.3.5.7.5 1.1 0 .4-.1.8-.4 1-.3.4-.7.5-1.1.5-.4 0-.8-.1-1-.4-.4-.3-.5-.7-.5-1.1zm0 6c0-.4.1-.8.4-1 .3-.4.7-.5 1.1-.5.4 0 .8.1 1 .4.4.3.5.7.5 1.1 0 .4-.1.8-.4 1-.3.4-.7.5-1.1.5-.4 0-.8-.1-1-.4-.4-.3-.5-.7-.5-1.1z" fill-rule="evenodd"></path></svg></span></span><span role="presentation" class="tox-tbtn tox-split-button__chevron" aria-disabled="false"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></span><span aria-hidden="true" id="aria_1344990271971790387495709" style="display: none;">Para abrir el elemento emergente, pulse Mayús+Intro</span></div><div aria-pressed="false" aria-label="Lista numerada" title="Lista numerada" role="button" aria-haspopup="true" tabindex="-1" unselectable="on" class="tox-split-button" aria-disabled="false" aria-expanded="false" aria-describedby="aria_1593945211991790387495709" style="user-select: none;"><span role="presentation" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M10 17h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm0-6h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm0-6h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 110-2zM6 4v3.5c0 .3-.2.5-.5.5a.5.5 0 01-.5-.5V5h-.5a.5.5 0 010-1H6zm-1 8.8l.2.2h1.3c.3 0 .5.2.5.5s-.2.5-.5.5H4.9a1 1 0 01-.9-1V13c0-.4.3-.8.6-1l1.2-.4.2-.3a.2.2 0 00-.2-.2H4.5a.5.5 0 01-.5-.5c0-.3.2-.5.5-.5h1.6c.5 0 .9.4.9 1v.1c0 .4-.3.8-.6 1l-1.2.4-.2.3zM7 17v2c0 .6-.4 1-1 1H4.5a.5.5 0 010-1h1.2c.2 0 .3-.1.3-.3 0-.2-.1-.3-.3-.3H4.4a.4.4 0 110-.8h1.3c.2 0 .3-.1.3-.3 0-.2-.1-.3-.3-.3H4.5a.5.5 0 110-1H6c.6 0 1 .4 1 1z" fill-rule="evenodd"></path></svg></span></span><span role="presentation" class="tox-tbtn tox-split-button__chevron" aria-disabled="false"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></span><span aria-hidden="true" id="aria_1593945211991790387495709" style="display: none;">Para abrir el elemento emergente, pulse Mayús+Intro</span></div><button aria-label="Disminuir sangría" title="Disminuir sangría" type="button" tabindex="-1" class="tox-tbtn tox-tbtn--disabled" aria-disabled="true"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M7 5h12c.6 0 1 .4 1 1s-.4 1-1 1H7a1 1 0 110-2zm5 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm0 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm-5 4h12a1 1 0 010 2H7a1 1 0 010-2zm1.6-3.8a1 1 0 01-1.2 1.6l-3-2a1 1 0 010-1.6l3-2a1 1 0 011.2 1.6L6.8 12l1.8 1.2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Incrementar sangría" title="Incrementar sangría" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M7 5h12c.6 0 1 .4 1 1s-.4 1-1 1H7a1 1 0 110-2zm5 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm0 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm-5 4h12a1 1 0 010 2H7a1 1 0 010-2zm-2.6-3.8L6.2 12l-1.8-1.2a1 1 0 011.2-1.6l3 2a1 1 0 010 1.6l-3 2a1 1 0 11-1.2-1.6z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button title="Fuentes" aria-label="Fuentes" aria-haspopup="true" type="button" tabindex="-1" unselectable="on" class="tox-tbtn tox-tbtn--select tox-tbtn--bespoke" aria-expanded="false" style="user-select: none;"><span class="tox-tbtn__select-label">Arial</span><div class="tox-tbtn__select-chevron"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><button title="Tamaños de fuente" aria-label="Tamaños de fuente" aria-haspopup="true" type="button" tabindex="-1" unselectable="on" class="tox-tbtn tox-tbtn--select tox-tbtn--bespoke" aria-expanded="false" style="user-select: none;"><span class="tox-tbtn__select-label">12pt</span><div class="tox-tbtn__select-chevron"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button><div aria-pressed="false" aria-label="Color del texto" title="Color del texto" role="button" aria-haspopup="true" tabindex="-1" unselectable="on" class="tox-split-button" aria-disabled="false" aria-expanded="false" aria-describedby="aria_1587999762011790387495709" style="user-select: none;"><span role="presentation" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><g fill-rule="evenodd"><path id="tox-icon-text-color__color" d="M3 18h18v3H3z" fill="#000000"></path><path d="M8.7 16h-.8a.5.5 0 01-.5-.6l2.7-9c.1-.3.3-.4.5-.4h2.8c.2 0 .4.1.5.4l2.7 9a.5.5 0 01-.5.6h-.8a.5.5 0 01-.4-.4l-.7-2.2c0-.3-.3-.4-.5-.4h-3.4c-.2 0-.4.1-.5.4l-.7 2.2c0 .3-.2.4-.4.4zm2.6-7.6l-.6 2a.5.5 0 00.5.6h1.6a.5.5 0 00.5-.6l-.6-2c0-.3-.3-.4-.5-.4h-.4c-.2 0-.4.1-.5.4z"></path></g></svg></span></span><span role="presentation" class="tox-tbtn tox-split-button__chevron" aria-disabled="false"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></span><span aria-hidden="true" id="aria_1587999762011790387495709" style="display: none;">Para abrir el elemento emergente, pulse Mayús+Intro</span></div><div aria-pressed="false" aria-label="Color de fondo" title="Color de fondo" role="button" aria-haspopup="true" tabindex="-1" unselectable="on" class="tox-split-button" aria-disabled="false" aria-expanded="false" aria-describedby="aria_7148178312031790387495709" style="user-select: none;"><span role="presentation" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><g fill-rule="evenodd"><path id="tox-icon-highlight-bg-color__color" d="M3 18h18v3H3z" fill="#000000"></path><path fill-rule="nonzero" d="M7.7 16.7H3l3.3-3.3-.7-.8L10.2 8l4 4.1-4 4.2c-.2.2-.6.2-.8 0l-.6-.7-1.1 1.1zm5-7.5L11 7.4l3-2.9a2 2 0 012.6 0L18 6c.7.7.7 2 0 2.7l-2.9 2.9-1.8-1.8-.5-.6"></path></g></svg></span></span><span role="presentation" class="tox-tbtn tox-split-button__chevron" aria-disabled="false"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></span><span aria-hidden="true" id="aria_7148178312031790387495709" style="display: none;">Para abrir el elemento emergente, pulse Mayús+Intro</span></div><button aria-label="Limpiar formato" title="Limpiar formato" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M13.2 6a1 1 0 010 .2l-2.6 10a1 1 0 01-1 .8h-.2a.8.8 0 01-.8-1l2.6-10H8a1 1 0 110-2h9a1 1 0 010 2h-3.8zM5 18h7a1 1 0 010 2H5a1 1 0 010-2zm13 1.5L16.5 18 15 19.5a.7.7 0 01-1-1l1.5-1.5-1.5-1.5a.7.7 0 011-1l1.5 1.5 1.5-1.5a.7.7 0 011 1L17.5 17l1.5 1.5a.7.7 0 01-1 1z" fill-rule="evenodd"></path></svg></span></button></div><div role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Más..." title="Más..." type="button" tabindex="-1" data-alloy-tabstop="true" class="tox-tbtn" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M6 10a2 2 0 00-2 2c0 1.1.9 2 2 2a2 2 0 002-2 2 2 0 00-2-2zm12 0a2 2 0 00-2 2c0 1.1.9 2 2 2a2 2 0 002-2 2 2 0 00-2-2zm-6 0a2 2 0 00-2 2c0 1.1.9 2 2 2a2 2 0 002-2 2 2 0 00-2-2z" fill-rule="nonzero"></path></svg></span></button></div></div><div role="group" class="tox-toolbar__overflow tox-toolbar__overflow--closed" style="height: 0px;"><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Insertar/editar enlace" title="Insertar/editar enlace" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M6.2 12.3a1 1 0 011.4 1.4l-2.1 2a2 2 0 102.7 2.8l4.8-4.8a1 1 0 000-1.4 1 1 0 111.4-1.3 2.9 2.9 0 010 4L9.6 20a3.9 3.9 0 01-5.5-5.5l2-2zm11.6-.6a1 1 0 01-1.4-1.4l2-2a2 2 0 10-2.6-2.8L11 10.3a1 1 0 000 1.4A1 1 0 119.6 13a2.9 2.9 0 010-4L14.4 4a3.9 3.9 0 015.5 5.5l-2 2z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Insertar/editar imagen" title="Insertar/editar imagen" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M5 15.7l3.3-3.2c.3-.3.7-.3 1 0L12 15l4.1-4c.3-.4.8-.4 1 0l2 1.9V5H5v10.7zM5 18V19h3l2.8-2.9-2-2L5 17.9zm14-3l-2.5-2.4-6.4 6.5H19v-4zM4 3h16c.6 0 1 .4 1 1v16c0 .6-.4 1-1 1H4a1 1 0 01-1-1V4c0-.6.4-1 1-1zm6 8a2 2 0 100-4 2 2 0 000 4z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Insertar/editar medio" title="Insertar/editar medio" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M4 3h16c.6 0 1 .4 1 1v16c0 .6-.4 1-1 1H4a1 1 0 01-1-1V4c0-.6.4-1 1-1zm1 2v14h14V5H5zm4.8 2.6l5.6 4a.5.5 0 010 .8l-5.6 4A.5.5 0 019 16V8a.5.5 0 01.8-.4z" fill-rule="nonzero"></path></svg></span></button><button title="Tabla" aria-label="Tabla" aria-haspopup="true" type="button" tabindex="-1" data-alloy-tabstop="true" unselectable="on" class="tox-tbtn tox-tbtn--select" aria-expanded="false" style="user-select: none;"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path fill-rule="nonzero" d="M19 4a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6c0-1.1.9-2 2-2h14zM5 14v4h6v-4H5zm14 0h-6v4h6v-4zm0-6h-6v4h6V8zM5 12h6V8H5v4z"></path></svg></span><div class="tox-tbtn__select-chevron"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Salto de página" title="Salto de página" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><g fill-rule="evenodd"><path d="M5 11c.6 0 1 .4 1 1s-.4 1-1 1a1 1 0 010-2zm3 0h1c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 010-2zm4 0c.6 0 1 .4 1 1s-.4 1-1 1a1 1 0 010-2zm3 0h1c.6 0 1 .4 1 1s-.4 1-1 1h-1a1 1 0 010-2zm4 0c.6 0 1 .4 1 1s-.4 1-1 1a1 1 0 010-2zM7 3v5h10V3c0-.6.4-1 1-1s1 .4 1 1v7H5V3c0-.6.4-1 1-1s1 .4 1 1zM6 22a1 1 0 01-1-1v-7h14v7c0 .6-.4 1-1 1a1 1 0 01-1-1v-5H7v5c0 .6-.4 1-1 1z"></path></g></svg></span></button><button aria-label="Carácter especial" title="Carácter especial" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M15 18h4l1-2v4h-6v-3.3l1.4-1a6 6 0 001.8-2.9 6.3 6.3 0 00-.1-4.1 5.8 5.8 0 00-3-3.2c-.6-.3-1.3-.5-2.1-.5a5.1 5.1 0 00-3.9 1.8 6.3 6.3 0 00-1.3 6 6.2 6.2 0 001.8 3l1.4.9V20H4v-4l1 2h4v-.5l-2-1L5.4 15A6.5 6.5 0 014 11c0-1 .2-1.9.6-2.7A7 7 0 016.3 6C7.1 5.4 8 5 9 4.5c1-.3 2-.5 3.1-.5a8.8 8.8 0 015.7 2 7 7 0 011.7 2.3 6 6 0 01.2 4.8c-.2.7-.6 1.3-1 1.9a7.6 7.6 0 01-3.6 2.5v.5z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Emoticonos" title="Emoticonos" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M9 11c.6 0 1-.4 1-1s-.4-1-1-1a1 1 0 00-1 1c0 .6.4 1 1 1zm6 0c.6 0 1-.4 1-1s-.4-1-1-1a1 1 0 00-1 1c0 .6.4 1 1 1zm-3 5.5c2.1 0 4-1.5 4.4-3.5H7.6c.5 2 2.3 3.5 4.4 3.5zM12 4a8 8 0 100 16 8 8 0 000-16zm0 14.5a6.5 6.5 0 110-13 6.5 6.5 0 010 13z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Previsualizar" title="Previsualizar" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M3.5 12.5c.5.8 1.1 1.6 1.8 2.3 2 2 4.2 3.2 6.7 3.2s4.7-1.2 6.7-3.2a16.2 16.2 0 002.1-2.8 15.7 15.7 0 00-2.1-2.8c-2-2-4.2-3.2-6.7-3.2a9.3 9.3 0 00-6.7 3.2A16.2 16.2 0 003.2 12c0 .2.2.3.3.5zm-2.4-1l.7-1.2L4 7.8C6.2 5.4 8.9 4 12 4c3 0 5.8 1.4 8.1 3.8a18.2 18.2 0 012.8 3.7v1l-.7 1.2-2.1 2.5c-2.3 2.4-5 3.8-8.1 3.8-3 0-5.8-1.4-8.1-3.8a18.2 18.2 0 01-2.8-3.7 1 1 0 010-1zm12-3.3a2 2 0 102.7 2.6 4 4 0 11-2.6-2.6z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Guardar" title="Guardar" type="button" tabindex="-1" class="tox-tbtn tox-tbtn--disabled" aria-disabled="true"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M5 16h14a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2c0-1.1.9-2 2-2zm0 2v2h14v-2H5zm10 0h2v2h-2v-2zm-4-6.4L8.7 9.3a1 1 0 10-1.4 1.4l4 4c.4.4 1 .4 1.4 0l4-4a1 1 0 10-1.4-1.4L13 11.6V4a1 1 0 00-2 0v7.6z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Imprimir" title="Imprimir" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M18 8H6a3 3 0 00-3 3v6h2v3h14v-3h2v-6a3 3 0 00-3-3zm-1 10H7v-4h10v4zm.5-5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm.5-8H6v2h12V5z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Código fuente" title="Código fuente" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><g fill-rule="nonzero"><path d="M9.8 15.7c.3.3.3.8 0 1-.3.4-.9.4-1.2 0l-4.4-4.1a.8.8 0 010-1.2l4.4-4.2c.3-.3.9-.3 1.2 0 .3.3.3.8 0 1.1L6 12l3.8 3.7zM14.2 15.7c-.3.3-.3.8 0 1 .4.4.9.4 1.2 0l4.4-4.1c.3-.3.3-.9 0-1.2l-4.4-4.2a.8.8 0 00-1.2 0c-.3.3-.3.8 0 1.1L18 12l-3.8 3.7z"></path></g></svg></span></button><button aria-label="Pantalla completa" title="Pantalla completa" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M15.3 10l-1.2-1.3 2.9-3h-2.3a.9.9 0 110-1.7H19c.5 0 .9.4.9.9v4.4a.9.9 0 11-1.8 0V7l-2.9 3zm0 4l3 3v-2.3a.9.9 0 111.7 0V19c0 .5-.4.9-.9.9h-4.4a.9.9 0 110-1.8H17l-3-2.9 1.3-1.2zM10 15.4l-2.9 3h2.3a.9.9 0 110 1.7H5a.9.9 0 01-.9-.9v-4.4a.9.9 0 111.8 0V17l2.9-3 1.2 1.3zM8.7 10L5.7 7v2.3a.9.9 0 01-1.7 0V5c0-.5.4-.9.9-.9h4.4a.9.9 0 010 1.8H7l3 2.9-1.3 1.2z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="De izquierda a derecha" title="De izquierda a derecha" type="button" tabindex="-1" class="tox-tbtn tox-tbtn--enabled" aria-disabled="false" aria-pressed="true"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M11 5h7a1 1 0 010 2h-1v11a1 1 0 01-2 0V7h-2v11a1 1 0 01-2 0v-6c-.5 0-1 0-1.4-.3A3.4 3.4 0 017.8 10a3.3 3.3 0 010-2.8 3.4 3.4 0 011.8-1.8L11 5zM4.4 16.2L6.2 15l-1.8-1.2a1 1 0 011.2-1.6l3 2a1 1 0 010 1.6l-3 2a1 1 0 11-1.2-1.6z" fill-rule="evenodd"></path></svg></span></button><button aria-label="De derecha a izquierda" title="De derecha a izquierda" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M8 5h8v2h-2v12h-2V7h-2v12H8v-7c-.5 0-1 0-1.4-.3A3.4 3.4 0 014.8 10a3.3 3.3 0 010-2.8 3.4 3.4 0 011.8-1.8L8 5zm12 11.2a1 1 0 11-1 1.6l-3-2a1 1 0 010-1.6l3-2a1 1 0 111 1.6L18.4 15l1.8 1.2z" fill-rule="evenodd"></path></svg></span></button></div></div></div><div class="tox-anchorbar"></div></div><div class="tox-sidebar-wrap"><div class="tox-edit-area"><iframe id="content_ifr" frameborder="0" allowtransparency="true" title="Rich Text Area" class="tox-edit-area__iframe"></iframe></div><div role="complementary" class="tox-sidebar"><div data-alloy-tabstop="true" tabindex="-1" class="tox-sidebar__slider tox-sidebar--sliding-closed" style="width: 0px;"><div class="tox-sidebar__pane-container"></div></div></div></div></div><div class="tox-statusbar"><div class="tox-statusbar__text-container"><div role="navigation" data-alloy-tabstop="true" class="tox-statusbar__path" aria-disabled="false"><div role="button" data-index="0" tab-index="-1" aria-level="1" tabindex="-1" class="tox-statusbar__path-item" aria-disabled="false">p</div></div><button type="button" tabindex="-1" data-alloy-tabstop="true" class="tox-statusbar__wordcount">0 palabras</button></div><div title="Redimensionar" data-alloy-tabstop="true" tabindex="-1" class="tox-statusbar__resize-handle"><svg width="10" height="10" focusable="false"><g fill-rule="nonzero"><path d="M8.1 1.1A.5.5 0 119 2l-7 7A.5.5 0 111 8l7-7zM8.1 5.1A.5.5 0 119 6l-3 3A.5.5 0 115 8l3-3z"></path></g></svg></div></div><div aria-hidden="true" class="tox-throbber" style="display: none;"></div></div><script>
+            // 1) Cross-frame bridge: accept file URL messages from the File Manager
+            //    Supported payloads:
+            //      - { url: '...' }
+            //      - { mceAction: 'fileSelected', content: { url: '...' }, cbId?: '...' }
+            window.addEventListener('message', function(event) {
+                try {
+                    if (!event || event.origin !== window.location.origin) {
+                        return;
+                    }
+
+                    // Forward to parent when embedded (same-origin only)
+                    if (window.parent && window.parent !== window) {
+                        try {
+                            window.parent.postMessage(event.data, window.location.origin);
+                        } catch (e) {
+                            // Ignore forwarding errors
+                        }
+                    }
+
+                    var data = event.data || {};
+                    var pickedUrl = data.url || (data.content && data.content.url) || null;
+                    if (!pickedUrl) {
+                        return;
+                    }
+
+                    // Preferred: cbId registry callback (reliable for plugin dialogs)
+                    var cbId = data.cbId || null;
+                    if (cbId && window.__chamiloTinyPickerCallbacks && typeof window.__chamiloTinyPickerCallbacks[cbId] === 'function') {
+                        try {
+                            window.__chamiloTinyPickerCallbacks[cbId](pickedUrl);
+                        } finally {
+                            delete window.__chamiloTinyPickerCallbacks[cbId];
+                        }
+                        return;
+                    }
+
+                    // Legacy fallback: single global callback
+                    if (window.tinyMCECallback) {
+                        window.tinyMCECallback(pickedUrl);
+                        delete window.tinyMCECallback;
+                    }
+                } catch (e) {
+                    // console.warn('[TinyMCE] File picker message bridge failed:', e);
+                }
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                // 2) Patch tinymce.init once to merge local config with the shared base config
+                //    The shared base config is defined in /theme/<theme>/tiny-settings.js
+                if (window.tinymce && !window.tinymce.__chamiloPatched) {
+                    var originalInit = window.tinymce.init.bind(window.tinymce);
+                    window.tinymce.__chamiloPatched = true;
+
+                    window.tinymce.init = function(cfg) {
+                        if (window.buildTinyMceConfig && typeof window.buildTinyMceConfig === 'function') {
+                            try {
+                                cfg = window.buildTinyMceConfig(cfg);
+                            } catch (e) {
+                                // console.warn('TinyMCE config merge failed:', e);
+                            }
+                        }
+                        return originalInit(cfg);
+                    };
+                }
+
+                // 3) Defer editor initialization until all legacy scripts are ready
+                window.chEditors = window.chEditors || [];
+                window.chEditors.push({ "skin": false, 
+"content_css": false, 
+"branding": false, 
+"relative_urls": false, 
+"toolbar_mode": "sliding", 
+"autosave_ask_before_unload": true, 
+"image_title": true, 
+"automatic_uploads": true, 
+"file_picker_types": "file image media", 
+"file_picker_callback": 
+            function(cb, value, meta) {
+                // Create a unique callback id (cbId) and store cb in a registry.
+                var cbId;
+                try {
+                    cbId = (window.crypto && window.crypto.randomUUID) ? window.crypto.randomUUID() : null;
+                } catch (e) {
+                    cbId = null;
+                }
+                if (!cbId) {
+                    cbId = "cb_" + Date.now() + "_" + Math.random().toString(16).slice(2);
+                }
+
+                window.__chamiloTinyPickerCallbacks = window.__chamiloTinyPickerCallbacks || {};
+                window.__chamiloTinyPickerCallbacks[cbId] = function(pickedUrl) {
+                    try {
+                        cb(pickedUrl);
+                    } finally {
+                        try {
+                            delete window.__chamiloTinyPickerCallbacks[cbId];
+                        } catch (e) {
+                            // Ignore
+                        }
+                    }
+                };
+
+                // Legacy fallback (postMessage bridge may still use this)
+                window.tinyMCECallback = cb;
+
+                var fileType = (meta && meta.filetype) ? String(meta.filetype).toLowerCase() : "file";
+                var typeParam = "files";
+                if (fileType === "image") {
+                    typeParam = "images";
+                } else if (fileType === "media") {
+                    typeParam = "media";
+                }
+
+                var fileManagerUrl = "https://chamilo.educa.website/resources/document/5/manager?cid=1&sid=0&gid=0&gradebook=1&origin=";
+
+                // Append picker params safely
+                try {
+                    var u = new URL(fileManagerUrl, window.location.origin);
+                    u.searchParams.set("type", typeParam);
+                    u.searchParams.set("picker", "tinymce");
+                    u.searchParams.set("cbId", cbId);
+                    fileManagerUrl = u.toString();
+                } catch (e) {
+                    // Minimal fallback if URL() fails
+                    var sep = (fileManagerUrl.indexOf("?") === -1) ? "?" : "&";
+                    fileManagerUrl = fileManagerUrl + sep
+                        + "type=" + encodeURIComponent(typeParam)
+                        + "&picker=tinymce"
+                        + "&cbId=" + encodeURIComponent(cbId);
+                }
+
+                tinymce.activeEditor.windowManager.openUrl({
+                    title: "File Manager",
+                    url: fileManagerUrl,
+                    width: 980,
+                    height: 600,
+                    onMessage: function(api, message) {
+                        try {
+                            var data = message || {};
+                            var pickedUrl = (data.content && data.content.url) || data.url || null;
+                            if (!pickedUrl) return;
+
+                            if (window.__chamiloTinyPickerCallbacks && typeof window.__chamiloTinyPickerCallbacks[cbId] === "function") {
+                                window.__chamiloTinyPickerCallbacks[cbId](pickedUrl);
+                                delete window.__chamiloTinyPickerCallbacks[cbId];
+                            } else if (window.tinyMCECallback) {
+                                window.tinyMCECallback(pickedUrl);
+                                delete window.tinyMCECallback;
+                            }
+
+                            if (api && typeof api.close === "function") {
+                                api.close();
+                            }
+                        } catch (e) {
+                            // console.warn("[TinyMCE] onMessage handler failed:", e);
+                        }
+                    }
+                });
+            }
+        , 
+"language": "es", 
+"language_url": "https://chamilo.educa.website/libs/editor/langs/es.js", 
+"height": "300", 
+"selector": "#content" } 
+);
+            });
+        </script>
+                            
+                        </div>
+                        <label for="content">
+                            Descripción del curso
+                        </label>
+                    </div></div><div id="add_as_announcement_div" style="display: none">
+                <div class="field 2">
+                    <!-- div class="8" -->
+                        
+                        <label for="qf_e0bef8" class="h-4 ">
+                            
+                        </label>
+                        <div id="add_as_annonuncement" class="field field-checkbox">
+                <div class="p-checkbox p-component ">
+                    <input class="  p-checkbox-input" name="add_as_annonuncement" type="checkbox" value="1" id="qf_e0bef8" style="">
+                    <div class="p-checkbox-box">
+                        <svg class="p-icon p-checkbox-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                          <path d="M4.86199 11.5948C4.78717 11.5923 4.71366 11.5745 4.64596 11.5426C4.57826 11.5107 4.51779 11.4652 4.46827 11.4091L0.753985 7.69483C0.683167 7.64891 0.623706 7.58751 0.580092 7.51525C0.536478 7.44299 0.509851 7.36177 0.502221 7.27771C0.49459 7.19366 0.506156 7.10897 0.536046 7.03004C0.565935 6.95111 0.613367 6.88 0.674759 6.82208C0.736151 6.76416 0.8099 6.72095 0.890436 6.69571C0.970973 6.67046 1.05619 6.66385 1.13966 6.67635C1.22313 6.68886 1.30266 6.72017 1.37226 6.76792C1.44186 6.81567 1.4997 6.8786 1.54141 6.95197L4.86199 10.2503L12.6397 2.49483C12.7444 2.42694 12.8689 2.39617 12.9932 2.40745C13.1174 2.41873 13.2343 2.47141 13.3251 2.55705C13.4159 2.64268 13.4753 2.75632 13.4938 2.87973C13.5123 3.00315 13.4888 3.1292 13.4271 3.23768L5.2557 11.4091C5.20618 11.4652 5.14571 11.5107 5.07801 11.5426C5.01031 11.5745 4.9368 11.5923 4.86199 11.5948Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </div>
+                <label for="qf_e0bef8" class="">
+                    Agregar como un anuncio</label>
+            </div>
+                    <!-- /div --></div></div>
+                <div class="field">
+                    <div class="p-floatlabel p-floatlabel-on">
+                        <textarea id="comment" name="comment" class="p-inputtextarea p-inputtext p-component p-filled" style=""></textarea>
+                        
+                        <label for="comment">
+                            Comentarios
+                        </label>
+                    </div></div><div id="attachment_block" style="display: none">
+                <div class="field 2">
+                    <!-- div class="8" -->
+                        
+                        <label for="form_" class="h-4 ">
+                            Adjuntar
+                        </label>
+                        <div id="attachment_text" style="display: none"></div>
+                    <!-- /div --></div></div>
+                <input name="_qf__form" type="hidden" value="" id="form__qf__form" style="">
+
+            </form>
+            </div>
+            <div id="modalFooter" class="modal-footer">
+                <button type="button" class="btn btn--secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn--primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="calendarModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="modalTitle" class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div id="modalBody" class="modal-body">
+                <dl class="row">
+                    <!---  type event course o session -->
+                    <dt id="type_course" class="col-sm-2"></dt>
+                    <dd class="col-sm-10">
+                        <span id="calendar_course_info_simple"></span>
+                    </dd>
+                    <!--- user sender -->
+                    <dt class="user-sender col-sm-2" style="display: none;">
+                        Para
+                    </dt>
+                    <dd class="user-sender col-sm-10" style="display: none">
+                        <span id="visible_to_read_only_users"></span>
+                    </dd>
+                    <!--- type agenda -->
+
+                    <dt class="col-sm-2">
+                        Agenda
+                    </dt>
+                    <dd class="col-sm-10">
+                        <div id="color_calendar"></div>
+                    </dd>
+
+                    <dt class="col-sm-2">Título</dt>
+                    <dd class="col-sm-10">
+                        <div id="simple_title"></div>
+                    </dd>
+
+                    <dt class="col-sm-2">Fecha</dt>
+                    <dd class="col-sm-10">
+                        <span id="simple_start_date"></span>
+                        <span id="simple_end_date"></span>
+                    </dd>
+
+                    <dt class="col-sm-2">Descripción del curso</dt>
+                    <dd class="col-sm-10">
+                        <div id="simple_content"></div>
+                    </dd>
+
+                    <dt class="col-sm-2">Comentarios</dt>
+                    <dd class="col-sm-10">
+                        <div id="simple_comment"></div>
+                    </dd>
+
+                    <dt class="col-sm-2">Adjuntar</dt>
+                    <dd class="col-sm-10">
+                        <div id="simple_attachment"></div>
+                    </dd>
+
+                </dl>
+            </div>
+            <div id="modalFooter" class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+            </section></div><!--v-if--><!--v-if--><!-- Do not show docked chat in embedded contexts (iframes/pickers/dialogs) --><!--v-if--></div><!-- Toasts --></div>
+            
+
+                
+            
+    <dialog id="global-modal" class="legacy-modal">
+        <!--header-->
+        <div class="legacy-modal__header">
+            <h3 class="legacy-modal__title" id="global-modal-title"></h3>
+            <button title="Cerrar" id="close-global-model" class="p-button p-component p-button-icon-only p-button-secondary p-button-rounded p-button-text p-dialog-close-button p-button-sm" type="button">
+                <span class="p-icon p-button-icon mdi mdi-close"></span>
+            </button>
+        </div>
+        <!--body-->
+        <div class="legacy-modal__body" id="global-modal-body"></div>
+        <!--footer-->
+        <div class="legacy-modal__footer">
+        </div>
+    </dialog>
+
+
+
+<script src="/build/vue.d8f97662.js" integrity="sha384-eMDLTcxzQl1t5ULuIALtqRkD0ogoCguUhIGBdrPRVskj7lNUbbX0ICusetgi1BtI"></script><div class="p-toast p-component p-toast-top-center" data-p="top-center" data-pc-name="toast" pc0="" data-pc-section="root" style="position: fixed; top: 20px; left: 50%;"><div></div></div>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;18e1933f5e73454294434ef90b7724f0&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+
+<!----><div class="tox tox-silver-sink tox-tinymce-aux" style="position: relative;"></div></body></html>
